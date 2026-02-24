@@ -1,0 +1,25 @@
+﻿<Window x:Class="SPP.Client.Views.Instructor.VerificationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="VerificationWindow" Height="450" Width="800">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="EditButton"
+                Content="Редактировать"
+                Width="150"
+                Height="30"
+                Click="EditButton_Click"/>
+
+        <DataGrid x:Name="ConfirmationGrid"
+                  Grid.Row="1"
+                  Margin="0,10,0,0"
+                  AutoGenerateColumns="True"
+                  IsReadOnly="True"
+                  RowEditEnding="ConfirmationGrid_RowEditEnding"/>
+    </Grid>
+</Window>

@@ -1,0 +1,40 @@
+﻿<Window x:Class="SPP.Client.Views.Manager.ScheduleCreateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Тест сказки" Height="300" Width="400">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ListBox ItemsSource="{Binding Messages}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="5">
+                        <TextBlock FontWeight="Bold"
+                               Text="{Binding Role}" />
+                        <TextBlock TextWrapping="Wrap"
+                               Text="{Binding Content}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <TextBox x:Name="UserInputTextBox" Width="300" />
+            <Button x:Name="SendButton" Content="Send" Click="SendButton_Click" />
+        </StackPanel>
+
+        <ListBox x:Name="MessagesListBox">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="5">
+                        <TextBlock FontWeight="Bold" Text="{Binding Role}" />
+                        <TextBlock TextWrapping="Wrap" Text="{Binding Content}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

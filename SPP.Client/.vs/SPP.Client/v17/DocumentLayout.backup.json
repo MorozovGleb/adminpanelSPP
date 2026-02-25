@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\views\\manager\\allworkerswindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\views\\manager\\allworkerswindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+      "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\views\\manager\\allworkerswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\views\\manager\\allworkerswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\views\\instructor\\addverificationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\views\\instructor\\addverificationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\views\\instructor\\addverificationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\views\\instructor\\addverificationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\views\\manager\\adduserwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,16 +23,56 @@
       "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\views\\manager\\adduserwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\dto\\verification1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\dto\\verification1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\views\\instructor\\verificationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\views\\instructor\\verificationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\views\\instructor\\verificationwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\views\\instructor\\verificationwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\views\\managerwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\views\\managerwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\views\\managerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\views\\managerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\views\\manager\\schedulecreatewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\views\\manager\\schedulecreatewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\views\\managerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\views\\managerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\views\\manager\\allworkerswindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\views\\manager\\allworkerswindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\views\\manager\\allworkerswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\views\\manager\\allworkerswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\models\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\models\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\dto\\verification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\dto\\verification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\services\\ollamaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,20 +103,12 @@
       "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\models\\confirmationverification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\models\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\models\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\data\\helpers\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\data\\helpers\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -111,14 +147,6 @@
       "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\dto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\views\\instructor\\verificationwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\views\\instructor\\verificationwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\views\\instructor\\verificationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\views\\instructor\\verificationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\views\\worker\\mylearn.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\views\\worker\\mylearn.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -127,19 +155,11 @@
       "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\views\\worker\\mylearn.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\dto\\verification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\dto\\verification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\dto\\verificationstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\dto\\verificationstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u0413\u043B\u0435\u0431\\AppData\\Local\\Temp\\.vsdbgsrc\\1b77cb146b3dc6f60ca3b7de619b68fc3904b4f03155b255fa425d7d7bd36ae9\\PropertyPathWorker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|solutionrelative:spp.client\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E4E23EDF-592F-4508-BDD0-719099DC29B8}|SPP.Client\\SPP.Client.csproj|c:\\users\\\u0433\u043B\u0435\u0431\\desktop\\spp.client\\spp.client\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -157,11 +177,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 36,
               "Title": "MyLearn.xaml",
               "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Worker\\MyLearn.xaml",
               "RelativeDocumentMoniker": "SPP.Client\\Views\\Worker\\MyLearn.xaml",
@@ -169,12 +189,11 @@
               "RelativeToolTip": "SPP.Client\\Views\\Worker\\MyLearn.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-18T10:49:48.994Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 37,
               "Title": "MyLearn.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Worker\\MyLearn.xaml.cs",
               "RelativeDocumentMoniker": "SPP.Client\\Views\\Worker\\MyLearn.xaml.cs",
@@ -183,12 +202,11 @@
               "ViewState": "AgIAAAUAAAAAAAAAAAAawBYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-18T10:52:42.25Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 38,
               "Title": "VerificationStatusDto.cs",
               "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\DTO\\VerificationStatusDto.cs",
               "RelativeDocumentMoniker": "SPP.Client\\DTO\\VerificationStatusDto.cs",
@@ -197,18 +215,17 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-16T03:34:51.529Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 0,
               "Title": "ApiService.cs",
               "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Services\\ApiService.cs",
               "RelativeDocumentMoniker": "SPP.Client\\Services\\ApiService.cs",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Services\\ApiService.cs",
-              "RelativeToolTip": "SPP.Client\\Services\\ApiService.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwDAAAAATAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Services\\ApiService.cs*",
+              "RelativeToolTip": "SPP.Client\\Services\\ApiService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-06T01:58:36.17Z",
               "IsPinned": true,
@@ -216,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 29,
               "Title": "LoginWindow.xaml",
               "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "SPP.Client\\Views\\LoginWindow.xaml",
@@ -224,12 +241,11 @@
               "RelativeToolTip": "SPP.Client\\Views\\LoginWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-06T01:55:32.856Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 28,
               "Title": "LoginWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\LoginWindow.xaml.cs",
               "RelativeDocumentMoniker": "SPP.Client\\Views\\LoginWindow.xaml.cs",
@@ -238,12 +254,11 @@
               "ViewState": "AgIAAAMAAAAAAAAAAIBJwBAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-06T01:59:51.313Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 6,
               "Title": "VerificationWindow.xaml",
               "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Instructor\\VerificationWindow.xaml",
               "RelativeDocumentMoniker": "SPP.Client\\Views\\Instructor\\VerificationWindow.xaml",
@@ -256,20 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddUserWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Manager\\AddUserWindow.xaml.cs",
-              "RelativeDocumentMoniker": "SPP.Client\\Views\\Manager\\AddUserWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Manager\\AddUserWindow.xaml.cs",
-              "RelativeToolTip": "SPP.Client\\Views\\Manager\\AddUserWindow.xaml.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAADwvyEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-24T20:37:24.699Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AddUserWindow.xaml",
               "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Manager\\AddUserWindow.xaml",
               "RelativeDocumentMoniker": "SPP.Client\\Views\\Manager\\AddUserWindow.xaml",
@@ -277,11 +279,26 @@
               "RelativeToolTip": "SPP.Client\\Views\\Manager\\AddUserWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-24T20:35:46.513Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "AddUserWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Manager\\AddUserWindow.xaml.cs",
+              "RelativeDocumentMoniker": "SPP.Client\\Views\\Manager\\AddUserWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Manager\\AddUserWindow.xaml.cs",
+              "RelativeToolTip": "SPP.Client\\Views\\Manager\\AddUserWindow.xaml.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAiwBgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T20:37:24.699Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "AllWorkersWindow.xaml",
               "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Manager\\AllWorkersWindow.xaml",
               "RelativeDocumentMoniker": "SPP.Client\\Views\\Manager\\AllWorkersWindow.xaml",
@@ -289,75 +306,91 @@
               "RelativeToolTip": "SPP.Client\\Views\\Manager\\AllWorkersWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-24T20:17:25.169Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 13,
               "Title": "AllWorkersWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Manager\\AllWorkersWindow.xaml.cs",
               "RelativeDocumentMoniker": "SPP.Client\\Views\\Manager\\AllWorkersWindow.xaml.cs",
               "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Manager\\AllWorkersWindow.xaml.cs",
               "RelativeToolTip": "SPP.Client\\Views\\Manager\\AllWorkersWindow.xaml.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAADwvx0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAADwvyEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-24T20:28:25.757Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ManagerWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\ManagerWindow.xaml.cs",
-              "RelativeDocumentMoniker": "SPP.Client\\Views\\ManagerWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\ManagerWindow.xaml.cs",
-              "RelativeToolTip": "SPP.Client\\Views\\ManagerWindow.xaml.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAjwD0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Models\\User.cs",
+              "RelativeDocumentMoniker": "SPP.Client\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Models\\User.cs",
+              "RelativeToolTip": "SPP.Client\\Models\\User.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAxwCIAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-13T13:21:15.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ChatMessageModel.cs",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Models\\ChatMessageModel.cs",
-              "RelativeDocumentMoniker": "SPP.Client\\Models\\ChatMessageModel.cs",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Models\\ChatMessageModel.cs",
-              "RelativeToolTip": "SPP.Client\\Models\\ChatMessageModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T12:33:29.287Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ManagerWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\ManagerWindow.xaml",
-              "RelativeDocumentMoniker": "SPP.Client\\Views\\ManagerWindow.xaml",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\ManagerWindow.xaml",
-              "RelativeToolTip": "SPP.Client\\Views\\ManagerWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-06T01:56:06.183Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-25T08:52:04.554Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "OllamaService.cs",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Services\\OllamaService.cs",
-              "RelativeDocumentMoniker": "SPP.Client\\Services\\OllamaService.cs",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Services\\OllamaService.cs",
-              "RelativeToolTip": "SPP.Client\\Services\\OllamaService.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAcwA8AAABaAAAAAAAAAA==",
+              "Title": "VerificationWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Instructor\\VerificationWindow.xaml.cs",
+              "RelativeDocumentMoniker": "SPP.Client\\Views\\Instructor\\VerificationWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Instructor\\VerificationWindow.xaml.cs",
+              "RelativeToolTip": "SPP.Client\\Views\\Instructor\\VerificationWindow.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAhwCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T12:28:16.085Z",
+              "WhenOpened": "2026-02-18T11:47:35.299Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddVerificationWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Instructor\\AddVerificationWindow.xaml",
+              "RelativeDocumentMoniker": "SPP.Client\\Views\\Instructor\\AddVerificationWindow.xaml",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Instructor\\AddVerificationWindow.xaml",
+              "RelativeToolTip": "SPP.Client\\Views\\Instructor\\AddVerificationWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-25T12:40:26.429Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddVerificationWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Instructor\\AddVerificationWindow.xaml.cs",
+              "RelativeDocumentMoniker": "SPP.Client\\Views\\Instructor\\AddVerificationWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Instructor\\AddVerificationWindow.xaml.cs",
+              "RelativeToolTip": "SPP.Client\\Views\\Instructor\\AddVerificationWindow.xaml.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAqwCYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T12:59:20.864Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Verification1.cs",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\DTO\\Verification1.cs",
+              "RelativeDocumentMoniker": "SPP.Client\\DTO\\Verification1.cs",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\DTO\\Verification1.cs",
+              "RelativeToolTip": "SPP.Client\\DTO\\Verification1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T13:32:15.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ScheduleCreateWindow.xaml",
               "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Manager\\ScheduleCreateWindow.xaml",
               "RelativeDocumentMoniker": "SPP.Client\\Views\\Manager\\ScheduleCreateWindow.xaml",
@@ -369,213 +402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ChatService.cs",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Data\\ChatService.cs",
-              "RelativeDocumentMoniker": "SPP.Client\\Data\\ChatService.cs",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Data\\ChatService.cs",
-              "RelativeToolTip": "SPP.Client\\Data\\ChatService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T13:17:15.988Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ScheduleCreateWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Manager\\ScheduleCreateWindow.xaml.cs",
-              "RelativeDocumentMoniker": "SPP.Client\\Views\\Manager\\ScheduleCreateWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Manager\\ScheduleCreateWindow.xaml.cs",
-              "RelativeToolTip": "SPP.Client\\Views\\Manager\\ScheduleCreateWindow.xaml.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAADYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T13:01:31.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ChatViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\ViewModels\\ChatViewModel.cs",
-              "RelativeDocumentMoniker": "SPP.Client\\ViewModels\\ChatViewModel.cs",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\ViewModels\\ChatViewModel.cs",
-              "RelativeToolTip": "SPP.Client\\ViewModels\\ChatViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T12:30:14.317Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ChatRepository.cs",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\ViewModels\\ChatRepository.cs",
-              "RelativeDocumentMoniker": "SPP.Client\\ViewModels\\ChatRepository.cs",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\ViewModels\\ChatRepository.cs",
-              "RelativeToolTip": "SPP.Client\\ViewModels\\ChatRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T13:21:41.484Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "RelayCommand.cs",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Data\\Helpers\\RelayCommand.cs",
-              "RelativeDocumentMoniker": "SPP.Client\\Data\\Helpers\\RelayCommand.cs",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Data\\Helpers\\RelayCommand.cs",
-              "RelativeToolTip": "SPP.Client\\Data\\Helpers\\RelayCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T12:41:30.246Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UserSession.cs",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Models\\UserSession.cs",
-              "RelativeDocumentMoniker": "SPP.Client\\Models\\UserSession.cs",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Models\\UserSession.cs",
-              "RelativeToolTip": "SPP.Client\\Models\\UserSession.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T01:58:13.228Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ConfirmationVerification.cs",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Models\\ConfirmationVerification.cs",
-              "RelativeDocumentMoniker": "SPP.Client\\Models\\ConfirmationVerification.cs",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Models\\ConfirmationVerification.cs",
-              "RelativeToolTip": "SPP.Client\\Models\\ConfirmationVerification.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T12:31:06.971Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "SPP.Client\\AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\AssemblyInfo.cs",
-              "RelativeToolTip": "SPP.Client\\AssemblyInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T12:45:05.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "InstructorWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\InstructorWindow.xaml.cs",
-              "RelativeDocumentMoniker": "SPP.Client\\Views\\InstructorWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\InstructorWindow.xaml.cs",
-              "RelativeToolTip": "SPP.Client\\Views\\InstructorWindow.xaml.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAmwB8AAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-13T06:27:03.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\ViewModels\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "SPP.Client\\ViewModels\\LoginViewModel.cs",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\ViewModels\\LoginViewModel.cs",
-              "RelativeToolTip": "SPP.Client\\ViewModels\\LoginViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T01:57:44.437Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "LoginRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\DTO\\LoginRequestDto.cs",
-              "RelativeDocumentMoniker": "SPP.Client\\DTO\\LoginRequestDto.cs",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\DTO\\LoginRequestDto.cs",
-              "RelativeToolTip": "SPP.Client\\DTO\\LoginRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T15:30:23.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "WorkerWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\WorkerWindow.xaml",
-              "RelativeDocumentMoniker": "SPP.Client\\Views\\WorkerWindow.xaml",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\WorkerWindow.xaml",
-              "RelativeToolTip": "SPP.Client\\Views\\WorkerWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-06T01:56:27.902Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "InstructorWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\InstructorWindow.xaml",
-              "RelativeDocumentMoniker": "SPP.Client\\Views\\InstructorWindow.xaml",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\InstructorWindow.xaml",
-              "RelativeToolTip": "SPP.Client\\Views\\InstructorWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-06T01:56:52.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "WorkerWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\WorkerWindow.xaml.cs",
-              "RelativeDocumentMoniker": "SPP.Client\\Views\\WorkerWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\WorkerWindow.xaml.cs",
-              "RelativeToolTip": "SPP.Client\\Views\\WorkerWindow.xaml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAIBJwB8AAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-13T13:04:10.002Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "LoginResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\DTO\\LoginResponseDto.cs",
-              "RelativeDocumentMoniker": "SPP.Client\\DTO\\LoginResponseDto.cs",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\DTO\\LoginResponseDto.cs",
-              "RelativeToolTip": "SPP.Client\\DTO\\LoginResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T15:30:34.824Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "VerificationWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Instructor\\VerificationWindow.xaml.cs",
-              "RelativeDocumentMoniker": "SPP.Client\\Views\\Instructor\\VerificationWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Instructor\\VerificationWindow.xaml.cs",
-              "RelativeToolTip": "SPP.Client\\Views\\Instructor\\VerificationWindow.xaml.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAqwCMAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T11:47:35.299Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 17,
               "Title": "Verification.cs",
               "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\DTO\\Verification.cs",
               "RelativeDocumentMoniker": "SPP.Client\\DTO\\Verification.cs",
@@ -583,25 +410,48 @@
               "RelativeToolTip": "SPP.Client\\DTO\\Verification.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T13:24:51.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T13:24:51.327Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "PropertyPathWorker.cs",
-              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\AppData\\Local\\Temp\\.vsdbgsrc\\1b77cb146b3dc6f60ca3b7de619b68fc3904b4f03155b255fa425d7d7bd36ae9\\PropertyPathWorker.cs",
-              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\1b77cb146b3dc6f60ca3b7de619b68fc3904b4f03155b255fa425d7d7bd36ae9\\PropertyPathWorker.cs",
-              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\AppData\\Local\\Temp\\.vsdbgsrc\\1b77cb146b3dc6f60ca3b7de619b68fc3904b4f03155b255fa425d7d7bd36ae9\\PropertyPathWorker.cs",
-              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\1b77cb146b3dc6f60ca3b7de619b68fc3904b4f03155b255fa425d7d7bd36ae9\\PropertyPathWorker.cs",
-              "ViewState": "AgIAAKgEAAAAAAAAAAAQwK8EAAADAAAAAQAAAA==",
+              "DocumentIndex": 16,
+              "Title": "UserSession.cs",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Models\\UserSession.cs",
+              "RelativeDocumentMoniker": "SPP.Client\\Models\\UserSession.cs",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Models\\UserSession.cs",
+              "RelativeToolTip": "SPP.Client\\Models\\UserSession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T11:13:48.004Z",
+              "WhenOpened": "2026-02-06T01:58:13.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ManagerWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\ManagerWindow.xaml",
+              "RelativeDocumentMoniker": "SPP.Client\\Views\\ManagerWindow.xaml",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\ManagerWindow.xaml",
+              "RelativeToolTip": "SPP.Client\\Views\\ManagerWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-06T01:56:06.183Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 8,
+              "Title": "ManagerWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\ManagerWindow.xaml.cs",
+              "RelativeDocumentMoniker": "SPP.Client\\Views\\ManagerWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\ManagerWindow.xaml.cs",
+              "RelativeToolTip": "SPP.Client\\Views\\ManagerWindow.xaml.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAADgvzgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T13:21:15.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "UserDto.cs",
               "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\DTO\\UserDto.cs",
               "RelativeDocumentMoniker": "SPP.Client\\DTO\\UserDto.cs",
@@ -609,12 +459,225 @@
               "RelativeToolTip": "SPP.Client\\DTO\\UserDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T15:30:45.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-06T15:30:45.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ChatService.cs",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Data\\ChatService.cs",
+              "RelativeDocumentMoniker": "SPP.Client\\Data\\ChatService.cs",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Data\\ChatService.cs",
+              "RelativeToolTip": "SPP.Client\\Data\\ChatService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T13:17:15.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "SPP.Client\\Models\\Role.cs",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Models\\Role.cs",
+              "RelativeToolTip": "SPP.Client\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T10:27:24.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OllamaService.cs",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Services\\OllamaService.cs",
+              "RelativeDocumentMoniker": "SPP.Client\\Services\\OllamaService.cs",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Services\\OllamaService.cs",
+              "RelativeToolTip": "SPP.Client\\Services\\OllamaService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAcwA8AAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T12:28:16.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ChatMessageModel.cs",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Models\\ChatMessageModel.cs",
+              "RelativeDocumentMoniker": "SPP.Client\\Models\\ChatMessageModel.cs",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Models\\ChatMessageModel.cs",
+              "RelativeToolTip": "SPP.Client\\Models\\ChatMessageModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T12:33:29.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ScheduleCreateWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Manager\\ScheduleCreateWindow.xaml.cs",
+              "RelativeDocumentMoniker": "SPP.Client\\Views\\Manager\\ScheduleCreateWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\Manager\\ScheduleCreateWindow.xaml.cs",
+              "RelativeToolTip": "SPP.Client\\Views\\Manager\\ScheduleCreateWindow.xaml.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAADYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T13:01:31.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ChatViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\ViewModels\\ChatViewModel.cs",
+              "RelativeDocumentMoniker": "SPP.Client\\ViewModels\\ChatViewModel.cs",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\ViewModels\\ChatViewModel.cs",
+              "RelativeToolTip": "SPP.Client\\ViewModels\\ChatViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T12:30:14.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ChatRepository.cs",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\ViewModels\\ChatRepository.cs",
+              "RelativeDocumentMoniker": "SPP.Client\\ViewModels\\ChatRepository.cs",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\ViewModels\\ChatRepository.cs",
+              "RelativeToolTip": "SPP.Client\\ViewModels\\ChatRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T13:21:41.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Data\\Helpers\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "SPP.Client\\Data\\Helpers\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Data\\Helpers\\RelayCommand.cs",
+              "RelativeToolTip": "SPP.Client\\Data\\Helpers\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T12:41:30.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ConfirmationVerification.cs",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Models\\ConfirmationVerification.cs",
+              "RelativeDocumentMoniker": "SPP.Client\\Models\\ConfirmationVerification.cs",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Models\\ConfirmationVerification.cs",
+              "RelativeToolTip": "SPP.Client\\Models\\ConfirmationVerification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T12:31:06.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "SPP.Client\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\AssemblyInfo.cs",
+              "RelativeToolTip": "SPP.Client\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T12:45:05.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "InstructorWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\InstructorWindow.xaml.cs",
+              "RelativeDocumentMoniker": "SPP.Client\\Views\\InstructorWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\InstructorWindow.xaml.cs",
+              "RelativeToolTip": "SPP.Client\\Views\\InstructorWindow.xaml.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAmwB8AAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T06:27:03.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "SPP.Client\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "SPP.Client\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T01:57:44.437Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 35,
+              "Title": "LoginRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\DTO\\LoginRequestDto.cs",
+              "RelativeDocumentMoniker": "SPP.Client\\DTO\\LoginRequestDto.cs",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\DTO\\LoginRequestDto.cs",
+              "RelativeToolTip": "SPP.Client\\DTO\\LoginRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T15:30:23.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "WorkerWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\WorkerWindow.xaml",
+              "RelativeDocumentMoniker": "SPP.Client\\Views\\WorkerWindow.xaml",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\WorkerWindow.xaml",
+              "RelativeToolTip": "SPP.Client\\Views\\WorkerWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-06T01:56:27.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "InstructorWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\InstructorWindow.xaml",
+              "RelativeDocumentMoniker": "SPP.Client\\Views\\InstructorWindow.xaml",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\InstructorWindow.xaml",
+              "RelativeToolTip": "SPP.Client\\Views\\InstructorWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-06T01:56:52.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "WorkerWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\WorkerWindow.xaml.cs",
+              "RelativeDocumentMoniker": "SPP.Client\\Views\\WorkerWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\Views\\WorkerWindow.xaml.cs",
+              "RelativeToolTip": "SPP.Client\\Views\\WorkerWindow.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBJwB8AAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T13:04:10.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "LoginResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\DTO\\LoginResponseDto.cs",
+              "RelativeDocumentMoniker": "SPP.Client\\DTO\\LoginResponseDto.cs",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\DTO\\LoginResponseDto.cs",
+              "RelativeToolTip": "SPP.Client\\DTO\\LoginResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T15:30:34.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "PropertyPathWorker.cs",
+              "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\AppData\\Local\\Temp\\.vsdbgsrc\\1b77cb146b3dc6f60ca3b7de619b68fc3904b4f03155b255fa425d7d7bd36ae9\\PropertyPathWorker.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\1b77cb146b3dc6f60ca3b7de619b68fc3904b4f03155b255fa425d7d7bd36ae9\\PropertyPathWorker.cs",
+              "ToolTip": "C:\\Users\\\u0413\u043B\u0435\u0431\\AppData\\Local\\Temp\\.vsdbgsrc\\1b77cb146b3dc6f60ca3b7de619b68fc3904b4f03155b255fa425d7d7bd36ae9\\PropertyPathWorker.cs",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\1b77cb146b3dc6f60ca3b7de619b68fc3904b4f03155b255fa425d7d7bd36ae9\\PropertyPathWorker.cs",
+              "ViewState": "AgIAAKgEAAAAAAAAAAAQwK8EAAADAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T11:13:48.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\App.xaml.cs",
               "RelativeDocumentMoniker": "SPP.Client\\App.xaml.cs",
@@ -622,12 +685,11 @@
               "RelativeToolTip": "SPP.Client\\App.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-13T13:03:52.744Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-13T13:03:52.744Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 41,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\\u0413\u043B\u0435\u0431\\Desktop\\SPP.Client\\SPP.Client\\App.xaml",
               "RelativeDocumentMoniker": "SPP.Client\\App.xaml",

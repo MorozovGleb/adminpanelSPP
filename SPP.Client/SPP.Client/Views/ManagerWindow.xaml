@@ -45,7 +45,7 @@
     Click="CreateUserButton_Click"/>
             <Button Content="Работники"
 Height="45"
-Click="CreateUserButton_Click"/>
+Click="ShowUserButton_Click"/>
 
         </StackPanel>
     </Grid>

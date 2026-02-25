@@ -31,7 +31,7 @@
                                     Width="*"/>
 
                 <DataGridTextColumn Header="Роль"
-                                    Binding="{Binding RoleName}"
+                                    Binding="{Binding Role}"
                                     Width="*"/>
 
                 <DataGridTextColumn Header="Телефон"
@@ -39,7 +39,7 @@
                                     Width="*"/>
 
                 <DataGridTextColumn Header="Логин"
-                                    Binding="{Binding login}"
+                                    Binding="{Binding Login}"
                                     Width="*"/>
             </DataGrid.Columns>
         </DataGrid>

@@ -31,33 +31,33 @@
 
         <!-- ID поле (если нужно) -->
         <TextBlock Grid.Row="0" Text="ID"/>
-        <TextBox Grid.Row="1" Text="{Binding Id}" Margin="0,5,0,10" IsEnabled="False"/>
+        <TextBox Grid.Row="1" x:Name="IdBox" Margin="0,5,0,10"/>
 
         <!-- Имя -->
         <TextBlock Grid.Row="2" Text="Имя"/>
-        <TextBox Grid.Row="3" Text="{Binding Name}" Margin="0,5,0,10"/>
+        <TextBox Grid.Row="3" x:Name="NameBox" Margin="0,5,0,10"/>
 
         <!-- Фамилия -->
         <TextBlock Grid.Row="4" Text="Фамилия"/>
-        <TextBox Grid.Row="5" Text="{Binding Surname}" Margin="0,5,0,10"/>
+        <TextBox Grid.Row="5" x:Name="SurNameBox" Margin="0,5,0,10"/>
 
         <!-- Телефон -->
         <TextBlock Grid.Row="6" Text="Телефон"/>
-        <TextBox Grid.Row="7" Text="{Binding PhoneNumber}" Margin="0,5,0,10"/>
+        <TextBox Grid.Row="7" x:Name="PhoneBox" Margin="0,5,0,10"/>
 
         <!-- Логин -->
         <TextBlock Grid.Row="8" Text="Логин"/>
-        <TextBox Grid.Row="9" Text="{Binding Login}" Margin="0,5,0,10"/>
+        <TextBox Grid.Row="9" x:Name="LoginBox" Margin="0,5,0,10"/>
 
         <!-- Пароль -->
         <TextBlock Grid.Row="10" Text="Пароль"/>
-        <PasswordBox Grid.Row="11"
+        <TextBox Grid.Row="11"
                      x:Name="PasswordBox"
                      Margin="0,5,0,10"/>
 
         <!-- ID роли -->
-        <TextBlock Grid.Row="12" Text="ID роли"/>
-        <TextBox Grid.Row="13" Text="{Binding RoleId}" Margin="0,5,0,10"/>
+        <TextBlock Grid.Row="12" Text="Роль"/>
+        <ComboBox Grid.Row="13" x:Name="RolBox" Margin="0,5,0,10"/>
 
         <!-- Кнопки -->
         <StackPanel Grid.Row="14"

@@ -31,12 +31,8 @@ namespace SPP.Client.Views.Instructor
 
         private void EditButton_Click(object sender, RoutedEventArgs e)
         {
-            _isEditing = !_isEditing;
-
-            ConfirmationGrid.IsReadOnly = !_isEditing;
-            ConfirmationGrid.CanUserAddRows = _isEditing;
-
-            EditButton.Content = _isEditing ? "Завершить" : "Редактировать";
+            var window = new SPP.Client.Views.Instructor.AddVerificationWindow();
+            window.Show();
         }
 
         private async void ConfirmationGrid_RowEditEnding(object sender, DataGridRowEditEndingEventArgs e)

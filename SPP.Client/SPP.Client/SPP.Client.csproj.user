@@ -5,6 +5,9 @@
     <Compile Update="Views\InstructorWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Instructor\AddVerificationWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Instructor\VerificationWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

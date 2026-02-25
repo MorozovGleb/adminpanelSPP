@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\App.xaml
-9254678510
+10-335741359
 
-29-1455239473
+33-1066567966
 216-1715781151
-Views\InstructorWindow.xaml;Views\Instructor\VerificationWindow.xaml;Views\LoginWindow.xaml;Views\ManagerWindow.xaml;Views\Manager\AddUserWindow.xaml;Views\Manager\AllWorkersWindow.xaml;Views\Manager\ScheduleCreateWindow.xaml;Views\WorkerWindow.xaml;Views\Worker\MyLearn.xaml;
+Views\InstructorWindow.xaml;Views\Instructor\AddVerificationWindow.xaml;Views\Instructor\VerificationWindow.xaml;Views\LoginWindow.xaml;Views\ManagerWindow.xaml;Views\Manager\AddUserWindow.xaml;Views\Manager\AllWorkersWindow.xaml;Views\Manager\ScheduleCreateWindow.xaml;Views\WorkerWindow.xaml;Views\Worker\MyLearn.xaml;
 
 True
 

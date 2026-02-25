@@ -81,3 +81,5 @@ C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\M
 C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Manager\AllWorkersWindow.g.cs
 C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Manager\AddUserWindow.baml
 C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Manager\AllWorkersWindow.baml
+C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\AddVerificationWindow.g.cs
+C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\AddVerificationWindow.baml

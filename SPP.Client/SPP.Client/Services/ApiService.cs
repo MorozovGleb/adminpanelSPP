@@ -29,6 +29,33 @@ public class ApiService
         return await response.Content
             .ReadFromJsonAsync<LoginResponseDto>();
     }
+    public async Task PostUserAsync(UserNotRole user)
+    {
+        var resp = await _httpClient.PostAsJsonAsync(
+            "api/users", user);
+        if (!resp.IsSuccessStatusCode) { 
+            string err = await resp.Content.ReadAsStringAsync();
+            MessageBox.Show(resp.StatusCode.ToString() +":" +err);
+        }
+        else
+        {
+            MessageBox.Show("Пользователь успешно создан!");
+        }
+    }
+    public async Task PostConformAsync(Verification c)
+    {
+        var resp = await _httpClient.PostAsJsonAsync(
+            "api/verification", c);
+        if (!resp.IsSuccessStatusCode)
+        {
+            string err = await resp.Content.ReadAsStringAsync();
+            MessageBox.Show(resp.StatusCode.ToString() + ":" + err);
+        }
+        else
+        {
+            MessageBox.Show("Запись успешно добавлена!");
+        }
+    }
     public async Task<List<VerificationStatusDto>> GetUserVerifications(int userId)
     {
 
@@ -41,6 +68,27 @@ public class ApiService
 
         return await _httpClient.GetFromJsonAsync<List<Verification>>
             ($"api/verification/f");
+
+    }
+    public async Task<List<Verification1>> GetTypaVerifications()
+    {
+
+        return await _httpClient.GetFromJsonAsync<List<Verification1>>
+            ($"api/verification");
+
+    }
+    public async Task<List<User>> GetUsers()
+    {
+
+        return await _httpClient.GetFromJsonAsync<List<User>>
+            ($"api/users");
+
+    }
+    public async Task<List<Role>> GetRoles()
+    {
+
+        return await _httpClient.GetFromJsonAsync<List<Role>>
+            ($"api/roles");
 
     }
     public async Task UpdateVerification(Verification dto)

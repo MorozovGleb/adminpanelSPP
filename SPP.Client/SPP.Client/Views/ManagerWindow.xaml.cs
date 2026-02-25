@@ -54,6 +54,12 @@ namespace SPP.Client.Views
 
         private void CreateUserButton_Click(object sender, RoutedEventArgs e)
         {
+            var window = new SPP.Client.Views.Manager.AddUserWindow();
+            window.Show();
+        }
+
+        private void ShowUserButton_Click(object sender, RoutedEventArgs e)
+        {
             var window = new SPP.Client.Views.Manager.AllWorkersWindow();
             window.Show();
         }

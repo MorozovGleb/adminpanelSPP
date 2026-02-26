@@ -3,47 +3,91 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SPP.Client.Views.Manager"
         mc:Ignorable="d"
-        Title="Список сотрудников"
-        Height="450"
-        Width="800"
+        Title="Список сотрудников — Вкусно и точка"
+        Height="550"
+        Width="900"
+        Background="#F7F9F8"
         WindowStartupLocation="CenterScreen">
 
-    <Grid Margin="10">
-        <DataGrid x:Name="WorkersGrid"
-                  AutoGenerateColumns="False"
-                  IsReadOnly="True"
-                  CanUserAddRows="False"
-                  Margin="0,0,0,40">
+    <Window.Resources>
+        <!-- Оранжевая кнопка действия -->
+        <Style x:Key="ActionButtonStyle" TargetType="Button">
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#FF7A00"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Margin" Value="0,10,0,0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <!-- Hover -->
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#E66F00"/>
+                            </Trigger>
+                            <!-- Press -->
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#CC6200"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
 
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="ID"
-                                    Binding="{Binding ID}"
-                                    Width="60"/>
+    <Grid>
+        <Border Background="White"
+                CornerRadius="15"
+                Padding="30"
+                Width="750"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
 
-                <DataGridTextColumn Header="Имя"
-                                    Binding="{Binding Name}"
-                                    Width="*"/>
+            <StackPanel>
 
-                <DataGridTextColumn Header="Фамилия"
-                                    Binding="{Binding Surname}"
-                                    Width="*"/>
+                <!-- Заголовок -->
+                <TextBlock Text="Список сотрудников"
+                           FontSize="26"
+                           FontWeight="Bold"
+                           Foreground="#111111"
+                           HorizontalAlignment="Center"/>
 
-                <DataGridTextColumn Header="Роль"
-                                    Binding="{Binding Role}"
-                                    Width="*"/>
+                <Rectangle Height="4"
+                           Width="120"
+                           Fill="#00A651"
+                           Margin="0,10,0,20"
+                           HorizontalAlignment="Center"/>
 
-                <DataGridTextColumn Header="Телефон"
-                                    Binding="{Binding Phone_number}"
-                                    Width="*"/>
+                <!-- Таблица -->
+                <DataGrid x:Name="WorkersGrid"
+                          AutoGenerateColumns="False"
+                          IsReadOnly="True"
+                          CanUserAddRows="False"
+                          Height="300">
 
-                <DataGridTextColumn Header="Логин"
-                                    Binding="{Binding Login}"
-                                    Width="*"/>
-            </DataGrid.Columns>
-        </DataGrid>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Binding="{Binding ID}" Width="60"/>
+                        <DataGridTextColumn Header="Имя" Binding="{Binding Name}" Width="*"/>
+                        <DataGridTextColumn Header="Фамилия" Binding="{Binding Surname}" Width="*"/>
+                        <DataGridTextColumn Header="Роль" Binding="{Binding Role}" Width="*"/>
+                        <DataGridTextColumn Header="Телефон" Binding="{Binding Phone_number}" Width="*"/>
+                        <DataGridTextColumn Header="Логин" Binding="{Binding Login}" Width="*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
 
-        
+
+            </StackPanel>
+
+        </Border>
     </Grid>
 </Window>

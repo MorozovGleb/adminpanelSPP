@@ -28,8 +28,6 @@ C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\W
 C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Worker\MyLearn.baml
 C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\VerificationWindow.baml
 C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\VerificationWindow.g.cs
-C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Manager\ScheduleCreateWindow.baml
-C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Manager\ScheduleCreateWindow.g.cs
 C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\SPP.Client.csproj.AssemblyReference.cache
 C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\bin\Debug\net8.0-windows\Azure.Core.dll
 C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\bin\Debug\net8.0-windows\Azure.Identity.dll
@@ -83,3 +81,5 @@ C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\M
 C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Manager\AllWorkersWindow.baml
 C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\AddVerificationWindow.g.cs
 C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\AddVerificationWindow.baml
+C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Manager\CreateSchedule.baml
+C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Manager\CreateSchedule.g.cs

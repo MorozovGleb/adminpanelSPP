@@ -23,7 +23,7 @@
     <Compile Update="Views\Manager\AllWorkersWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Manager\ScheduleCreateWindow.xaml.cs">
+    <Compile Update="Views\Manager\CreateSchedule.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\WorkerWindow.xaml.cs">

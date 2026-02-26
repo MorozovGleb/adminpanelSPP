@@ -3,28 +3,122 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SPP.Client.Views"
         mc:Ignorable="d"
-       Title="Вход в систему СПП" Height="300" Width="400"
-        WindowStartupLocation="CenterScreen">
+        Title="Вход — Вкусно и точка"
+        Height="420"
+        Width="450"
+        WindowStartupLocation="CenterScreen"
+        Background="#F7F9F8"
+        ResizeMode="NoResize">
 
-    <Grid Margin="20">
-        <StackPanel VerticalAlignment="Center">
+    <Window.Resources>
 
-            <TextBlock Text="Вход в систему" FontSize="20" Margin="0 0 0 15" HorizontalAlignment="Center"/>
+        <!-- Стиль для полей ввода -->
+        <Style x:Key="InputStyle" TargetType="Control">
+            <Setter Property="Height" Value="45"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="10,0"/>
+            <Setter Property="Margin" Value="0,10,0,0"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="#E6E6E6"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
 
-            <TextBox x:Name="LoginBox"
-         Height="35"
-         Margin="0 5"
-         />
+        <!-- Стиль кнопки -->
+        <Style x:Key="LoginButtonStyle" TargetType="Button">
+            <Setter Property="Height" Value="48"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#FF7A00"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Margin" Value="0,20,0,0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
 
+                            <!-- Hover -->
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#E66F00"/>
+                            </Trigger>
 
-            <PasswordBox x:Name="PasswordBox" Height="35" Margin="0 5"/>
+                            <!-- Press -->
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#CC6200"/>
+                            </Trigger>
 
-            <Button Content="Войти" Height="40" Margin="0 15 0 0" Click="Login_Click"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
 
-            <TextBlock x:Name="ErrorText" Foreground="Red" HorizontalAlignment="Center"/>
+    </Window.Resources>
 
-        </StackPanel>
+    <Grid>
+
+        <Border Background="White"
+                CornerRadius="15"
+                Padding="35"
+                Width="350"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center">
+
+            <StackPanel>
+
+                <!-- Заголовок -->
+                <TextBlock Text="Вход в систему"
+                           FontSize="24"
+                           FontWeight="Bold"
+                           Foreground="#111111"
+                           HorizontalAlignment="Center"/>
+
+                <Rectangle Height="4"
+                           Width="70"
+                           Fill="#00A651"
+                           Margin="0,8,0,20"
+                           HorizontalAlignment="Center"/>
+
+                <!-- Логин -->
+                <TextBlock Text="Логин"
+                           Foreground="#6B6B6B"
+                           FontSize="12"/>
+
+                <TextBox x:Name="LoginBox"
+                         Style="{StaticResource InputStyle}"/>
+
+                <!-- Пароль -->
+                <TextBlock Text="Пароль"
+                           Foreground="#6B6B6B"
+                           FontSize="12"
+                           Margin="0,10,0,0"/>
+
+                <PasswordBox x:Name="PasswordBox"
+                             Style="{StaticResource InputStyle}"/>
+
+                <!-- Кнопка -->
+                <Button Content="Войти"
+                        Style="{StaticResource LoginButtonStyle}"
+                        Click="Login_Click"/>
+
+                <!-- Ошибка -->
+                <TextBlock x:Name="ErrorText"
+                           Foreground="#E53935"
+                           FontSize="13"
+                           Margin="0,15,0,0"
+                           HorizontalAlignment="Center"/>
+
+            </StackPanel>
+
+        </Border>
+
     </Grid>
 </Window>

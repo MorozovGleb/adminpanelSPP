@@ -1,0 +1,174 @@
+﻿<Window x:Class="SPP.Client.Views.Manager.CreateSchedule"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Составление расписания — Вкусно и точка"
+        Height="600"
+        Width="850"
+        Background="#F7F9F8"
+        WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+
+        <!-- Стиль для кнопки отправки (оранжевый) -->
+        <Style x:Key="SendButtonStyle" TargetType="Button">
+            <Setter Property="Height" Value="45"/>
+            <Setter Property="Width" Value="120"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#FF7A00"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#E66F00"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#CC6200"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Background" Value="#CCCCCC"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Стиль для текстового поля ввода -->
+        <Style x:Key="InputTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Height" Value="45"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="10,8"/>
+            <Setter Property="BorderBrush" Value="#E0E0E0"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="8">
+                            <ScrollViewer x:Name="PART_ContentHost" 
+                                          Margin="8,0"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Стиль для ScrollViewer с чатом -->
+        <Style x:Key="ChatScrollViewerStyle" TargetType="ScrollViewer">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="#E0E0E0"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ScrollViewer">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="10">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <ScrollContentPresenter Grid.Column="0"
+                                                       CanContentScroll="{TemplateBinding CanContentScroll}"
+                                                       Margin="15"/>
+
+                                <ScrollBar x:Name="PART_VerticalScrollBar"
+                                          Grid.Column="1"
+                                          Value="{TemplateBinding VerticalOffset}"
+                                          Maximum="{TemplateBinding ScrollableHeight}"
+                                          ViewportSize="{TemplateBinding ViewportHeight}"
+                                          Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}"
+                                          Orientation="Vertical"
+                                          Width="18"/>
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Стиль для текста чата -->
+        <Style x:Key="ChatTextStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="#111111"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="LineHeight" Value="20"/>
+            <Setter Property="LineStackingStrategy" Value="BlockLineHeight"/>
+        </Style>
+
+    </Window.Resources>
+
+    <Grid Margin="30">
+        <Border Background="White"
+                CornerRadius="15"
+                Padding="30">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <!-- Заголовок -->
+                <StackPanel Grid.Row="0" Margin="0,0,0,20">
+                    <TextBlock Text="Составление расписания"
+                               FontSize="26"
+                               FontWeight="Bold"
+                               Foreground="#111111"
+                               HorizontalAlignment="Center"/>
+
+                    <Rectangle Height="4"
+                               Width="100"
+                               Fill="#00A651"
+                               Margin="0,10,0,0"
+                               HorizontalAlignment="Center"/>
+                </StackPanel>
+
+                <!-- Область чата -->
+                <ScrollViewer Grid.Row="1"
+                              Style="{StaticResource ChatScrollViewerStyle}"
+                              Margin="0,0,0,20"
+                              VerticalScrollBarVisibility="Auto">
+
+                    <TextBlock x:Name="ChatOutput"
+                               Style="{StaticResource ChatTextStyle}"
+                               Margin="5"/>
+                </ScrollViewer>
+
+                <!-- Панель ввода -->
+                <StackPanel Grid.Row="2"
+                            Orientation="Horizontal"
+                            HorizontalAlignment="Center">
+
+                    <TextBox x:Name="UserInput"
+                             Style="{StaticResource InputTextBoxStyle}"
+                             Width="450"
+                             Margin="0,0,15,0"/>
+
+                    <Button Content="Отправить"
+                            Style="{StaticResource SendButtonStyle}"
+                            Click="Send_Click"/>
+                </StackPanel>
+
+            </Grid>
+
+        </Border>
+    </Grid>
+</Window>

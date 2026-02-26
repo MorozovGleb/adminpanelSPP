@@ -48,7 +48,7 @@ namespace SPP.Client.Views
 
         private void CreateScheduleButton_Click(object sender, RoutedEventArgs e)
         {
-            var window = new SPP.Client.Views.Manager.ScheduleCreateWindow();
+            var window = new SPP.Client.Views.Manager.CreateSchedule();
             window.Show();
         }
 

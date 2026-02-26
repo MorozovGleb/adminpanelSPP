@@ -5,73 +5,255 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SPP.Client.Views.Manager"
         mc:Ignorable="d"
-       Title="Добавление пользователя"
-        Height="450"
-        Width="400"
+        Title="Добавление пользователя — Вкусно и точка"
+        Height="650"
+        Width="850"
+        Background="#F7F9F8"
         WindowStartupLocation="CenterScreen">
 
-    <Grid Margin="20">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
+    <Window.Resources>
 
-        <!-- ID поле (если нужно) -->
-        <TextBlock Grid.Row="0" Text="ID"/>
-        <TextBox Grid.Row="1" x:Name="IdBox" Margin="0,5,0,10"/>
+        <!-- Стиль для кнопок действий (оранжевый) -->
+        <Style x:Key="ActionButtonStyle" TargetType="Button">
+            <Setter Property="Height" Value="45"/>
+            <Setter Property="Width" Value="120"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#FF7A00"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#E66F00"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#CC6200"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Background" Value="#CCCCCC"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
 
-        <!-- Имя -->
-        <TextBlock Grid.Row="2" Text="Имя"/>
-        <TextBox Grid.Row="3" x:Name="NameBox" Margin="0,5,0,10"/>
+        <!-- Стиль для серой кнопки отмены -->
+        <Style x:Key="CancelButtonStyle" TargetType="Button" BasedOn="{StaticResource ActionButtonStyle}">
+            <Setter Property="Background" Value="#E0E0E0"/>
+            <Setter Property="Foreground" Value="#111111"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#D0D0D0"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#C0C0C0"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
 
-        <!-- Фамилия -->
-        <TextBlock Grid.Row="4" Text="Фамилия"/>
-        <TextBox Grid.Row="5" x:Name="SurNameBox" Margin="0,5,0,10"/>
+        <!-- Стиль для текстовых полей -->
+        <Style x:Key="FormTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="10,8"/>
+            <Setter Property="BorderBrush" Value="#E0E0E0"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Margin" Value="0,5,0,15"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border Background="White"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="8">
+                            <ScrollViewer x:Name="PART_ContentHost" 
+                                          Margin="8,0"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
 
-        <!-- Телефон -->
-        <TextBlock Grid.Row="6" Text="Телефон"/>
-        <TextBox Grid.Row="7" x:Name="PhoneBox" Margin="0,5,0,10"/>
+        <!-- Стиль для комбобокса -->
+        <Style x:Key="FormComboBoxStyle" TargetType="ComboBox">
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="0,5,0,15"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBox">
+                        <Grid>
+                            <Border x:Name="Border"
+                                    Background="White"
+                                    BorderBrush="#E0E0E0"
+                                    BorderThickness="1"
+                                    CornerRadius="8">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
 
-        <!-- Логин -->
-        <TextBlock Grid.Row="8" Text="Логин"/>
-        <TextBox Grid.Row="9" x:Name="LoginBox" Margin="0,5,0,10"/>
+                                    <TextBlock x:Name="TextBlock"
+                                               Text="{TemplateBinding SelectionBoxItem}"
+                                               VerticalAlignment="Center"
+                                               Margin="10,0,0,0"
+                                               Foreground="#111111"/>
 
-        <!-- Пароль -->
-        <TextBlock Grid.Row="10" Text="Пароль"/>
-        <TextBox Grid.Row="11"
-                     x:Name="PasswordBox"
-                     Margin="0,5,0,10"/>
+                                    <ToggleButton x:Name="ToggleButton"
+                                                  Grid.Column="1"
+                                                  Background="Transparent"
+                                                  BorderThickness="0"
+                                                  IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
+                                                  Width="30">
+                                        <Path Data="M0,0 L5,5 L10,0"
+                                              Fill="#666666"
+                                              Margin="0,2,0,0"
+                                              HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                                    </ToggleButton>
+                                </Grid>
+                            </Border>
 
-        <!-- ID роли -->
-        <TextBlock Grid.Row="12" Text="Роль"/>
-        <ComboBox Grid.Row="13" x:Name="RolBox" Margin="0,5,0,10"/>
+                            <Popup x:Name="Popup"
+                                   IsOpen="{Binding IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}}"
+                                   Placement="Bottom"
+                                   HorizontalOffset="-1">
+                                <Border Background="White"
+                                        BorderBrush="#E0E0E0"
+                                        BorderThickness="1"
+                                        CornerRadius="8"
+                                        Width="{Binding ActualWidth, RelativeSource={RelativeSource TemplatedParent}}">
+                                    <ScrollViewer>
+                                        <ItemsPresenter/>
+                                    </ScrollViewer>
+                                </Border>
+                            </Popup>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
 
-        <!-- Кнопки -->
-        <StackPanel Grid.Row="14"
-                    Orientation="Horizontal"
-                    HorizontalAlignment="Right"
-                    Margin="0,10,0,0">
-            <Button Content="Сохранить"
-                    Width="100"
-                    Margin="0,0,10,0"
-                    Command="{Binding SaveCommand}"
-                    CommandParameter="{Binding ElementName=PasswordBox}" Click="Button_Click"/>
-            <Button Content="Отмена"
-                    Width="100"
-                    Command="{Binding CancelCommand}" Click="Button_Click_1"/>
-        </StackPanel>
+        <!-- Стиль для пароля (отдельный стиль с видимостью символов) -->
+        <Style x:Key="PasswordTextBoxStyle" TargetType="TextBox" BasedOn="{StaticResource FormTextBoxStyle}">
+            <!-- Можно добавить специфические настройки для пароля, если нужно -->
+        </Style>
+
+        <!-- Стиль для заголовков полей -->
+        <Style x:Key="FieldLabelStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="Foreground" Value="#111111"/>
+            <Setter Property="Margin" Value="0,0,0,2"/>
+        </Style>
+
+    </Window.Resources>
+
+    <Grid>
+        <Border Background="White"
+                CornerRadius="15"
+                Padding="40"
+                Width="550"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+
+            <StackPanel>
+
+                <!-- Заголовок -->
+                <TextBlock Text="Добавление пользователя"
+                           FontSize="26"
+                           FontWeight="Bold"
+                           Foreground="#111111"
+                           HorizontalAlignment="Center"/>
+
+                <Rectangle Height="4"
+                           Width="100"
+                           Fill="#00A651"
+                           Margin="0,10,0,30"
+                           HorizontalAlignment="Center"/>
+
+                <!-- Поля формы (разделены на две колонки для компактности) -->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Левая колонка -->
+                    <StackPanel Grid.Column="0">
+                        <TextBlock Text="ID"
+                                   Style="{StaticResource FieldLabelStyle}"/>
+                        <TextBox x:Name="IdBox"
+                                 Style="{StaticResource FormTextBoxStyle}"/>
+
+                        <TextBlock Text="Имя"
+                                   Style="{StaticResource FieldLabelStyle}"/>
+                        <TextBox x:Name="NameBox"
+                                 Style="{StaticResource FormTextBoxStyle}"/>
+
+                        <TextBlock Text="Фамилия"
+                                   Style="{StaticResource FieldLabelStyle}"/>
+                        <TextBox x:Name="SurNameBox"
+                                 Style="{StaticResource FormTextBoxStyle}"/>
+
+                        <TextBlock Text="Телефон"
+                                   Style="{StaticResource FieldLabelStyle}"/>
+                        <TextBox x:Name="PhoneBox"
+                                 Style="{StaticResource FormTextBoxStyle}"/>
+                    </StackPanel>
+
+                    <!-- Правая колонка -->
+                    <StackPanel Grid.Column="2">
+                        <TextBlock Text="Логин"
+                                   Style="{StaticResource FieldLabelStyle}"/>
+                        <TextBox x:Name="LoginBox"
+                                 Style="{StaticResource FormTextBoxStyle}"/>
+
+                        <TextBlock Text="Пароль"
+                                   Style="{StaticResource FieldLabelStyle}"/>
+                        <TextBox x:Name="PasswordBox"
+                                 Style="{StaticResource PasswordTextBoxStyle}"/>
+
+                        <TextBlock Text="Роль"
+                                   Style="{StaticResource FieldLabelStyle}"/>
+                        <ComboBox x:Name="RolBox"
+                                  Style="{StaticResource FormComboBoxStyle}"/>
+                    </StackPanel>
+                </Grid>
+
+                <!-- Кнопки -->
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Right"
+                            Margin="0,20,0,0">
+
+                    <Button Content="Сохранить"
+                            Style="{StaticResource ActionButtonStyle}"
+                            Command="{Binding SaveCommand}"
+                            CommandParameter="{Binding ElementName=PasswordBox}"
+                            Click="Button_Click"
+                            Margin="0,0,10,0"/>
+
+                    <Button Content="Отмена"
+                            Style="{StaticResource CancelButtonStyle}"
+                            Command="{Binding CancelCommand}"
+                            Click="Button_Click_1"/>
+
+                </StackPanel>
+
+            </StackPanel>
+
+        </Border>
     </Grid>
 </Window>

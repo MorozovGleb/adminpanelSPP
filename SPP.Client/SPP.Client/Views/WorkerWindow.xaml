@@ -3,42 +3,97 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SPP.Client.Views"
         mc:Ignorable="d"
-        Title="Работник — СПП" Height="500" Width="900"
-        >
+        Title="Работник — Вкусно и точка"
+        Height="550"
+        Width="900"
+        Background="#F7F9F8">
 
-    <Grid Margin="20">
+    <Window.Resources>
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+        <!-- Основная кнопка (оранжевая) -->
+        <Style x:Key="PrimaryButtonStyle" TargetType="Button">
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#FF7A00"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Margin" Value="0,10,0,0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
 
-        <!-- Приветствие -->
-        <TextBlock x:Name="HeaderText"
-   FontSize="20"
-   FontWeight="Bold"
-   Margin="10"/>
-        <!-- Кнопки -->
-        <StackPanel Grid.Row="2"
-                    VerticalAlignment="Top"
-                    HorizontalAlignment="Center"
-                    Width="300">
+                            <!-- Hover -->
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#E66F00"/>
+                            </Trigger>
 
-            <Button Content="Расписание"
-                    Height="45"
-                    Click="ScheduleButton_Click"/>
+                            <!-- Press -->
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#CC6200"/>
+                            </Trigger>
 
-            <Button Content="Просмотр отработанных часов"
-                    Height="45"
-                    Click="HoursButton_Click"/>
-            <Button Content="Мои обучения"
-        Height="45"
-        Click="LearnButton_Click"/>
+                            <!-- Disabled -->
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Background" Value="#CCCCCC"/>
+                            </Trigger>
 
-        </StackPanel>
-       
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Window.Resources>
+
+    <Grid Margin="40">
+
+        <Border Background="White"
+                CornerRadius="15"
+                Padding="40"
+                HorizontalAlignment="Center"
+                Width="602">
+
+            <StackPanel>
+
+                <!-- Заголовок -->
+                <TextBlock x:Name="HeaderText"
+                           Text="Добро пожаловать!"
+                           FontSize="24"
+                           FontWeight="Bold"
+                           Foreground="#111111"
+                           HorizontalAlignment="Center"/>
+
+                <Rectangle Height="4"
+                           Width="80"
+                           Fill="#00A651"
+                           Margin="0,10,0,25"
+                           HorizontalAlignment="Center"/>
+
+                <!-- Кнопки -->
+                <Button Content="Расписание"
+                        Style="{StaticResource PrimaryButtonStyle}"
+                        Click="ScheduleButton_Click"/>
+
+                <Button Content="Просмотр отработанных часов"
+                        Style="{StaticResource PrimaryButtonStyle}"
+                        Click="HoursButton_Click"/>
+
+                <Button Content="Мои обучения"
+                        Style="{StaticResource PrimaryButtonStyle}"
+                        Click="LearnButton_Click"/>
+
+            </StackPanel>
+
+        </Border>
+
     </Grid>
 </Window>

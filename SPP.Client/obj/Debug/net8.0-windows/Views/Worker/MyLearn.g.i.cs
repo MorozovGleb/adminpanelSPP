@@ -60,7 +60,7 @@ namespace SPP.Client.Views.Worker {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SPP.Client;V1.0.0.0;component/views/worker/mylearn.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SPP.Client;component/views/worker/mylearn.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\Worker\MyLearn.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

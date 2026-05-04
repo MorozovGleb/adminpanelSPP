@@ -88,6 +88,11 @@
                         Style="{StaticResource ActionButtonStyle}"
                         Click="HoursButton_Click"/>
 
+                <Button Content="Провести обучение"
+                        Style="{StaticResource ActionButtonStyle}"
+                        Click="LearnButton_Click"/>
+
+
             </StackPanel>
 
         </Border>

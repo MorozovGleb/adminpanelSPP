@@ -60,7 +60,7 @@ namespace SPP.Client.Views.Manager {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SPP.Client;V1.0.0.0;component/views/manager/allworkerswindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SPP.Client;component/views/manager/allworkerswindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\Manager\AllWorkersWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

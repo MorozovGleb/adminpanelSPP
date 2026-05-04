@@ -8,6 +8,15 @@
     <Compile Update="Views\Instructor\AddVerificationWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Instructor\Moduls\CookingPotatoes.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Instructor\Moduls\IntroductoryMeetingWithTheInstructor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Instructor\ProvideTraining.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Instructor\VerificationWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

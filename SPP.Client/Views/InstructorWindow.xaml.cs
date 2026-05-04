@@ -48,5 +48,11 @@ namespace SPP.Client.Views
         {
 
         }
+
+        private void LearnButton_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new SPP.Client.Views.Instructor.ProvideTraining();
+            window.Show();
+        }
     }
 }

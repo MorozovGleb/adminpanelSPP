@@ -1,25 +1,47 @@
 ﻿<Window x:Class="SPP.Client.Views.Manager.CreateSchedule"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Составление расписания — Вкусно и точка"
-        Height="600"
-        Width="850"
-        Background="#F7F9F8"
+        Title="Управление расписанием" Height="600" Width="800"
         WindowStartupLocation="CenterScreen">
-
-
-    <Grid Margin="15">
+    <Grid Margin="10">
         <Grid.RowDefinitions>
-            <RowDefinition/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <ScrollViewer Grid.Row="0">
-            <TextBox x:Name="ChatOutput" TextWrapping="Wrap" FontSize="14"/>
-        </ScrollViewer>
+        <!-- Панель с кнопками -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,10">
+            <Button x:Name="GenerateButton" Content="Сгенерировать расписание" 
+                    Click="Generate_Click" Width="180" Height="30" Margin="0,0,10,0"
+                    Background="#4CAF50" Foreground="White" FontWeight="Bold"/>
 
-        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,10,0,0">
-            <Button Content="Сгенерировать расписание" Width="200" Height="35" Click="Generate_Click"/>
+            <Button x:Name="ViewExistingButton" Content="Просмотреть существующее" 
+                    Click="ViewExisting_Click" Width="180" Height="30" Margin="0,0,10,0"
+                    Background="#2196F3" Foreground="White" FontWeight="Bold"/>
+
+            <Button x:Name="CheckStatusButton" Content="Проверить статус" 
+                    Click="CheckStatus_Click" Width="150" Height="30" Margin="0,0,10,0"
+                    Background="#FF9800" Foreground="White" FontWeight="Bold"/>
+
+            <Button x:Name="ClearScheduleButton" Content="Очистить расписание" 
+                    Click="ClearSchedule_Click" Width="160" Height="30"
+                    Background="#f44336" Foreground="White" FontWeight="Bold"/>
         </StackPanel>
+
+        <!-- Окно вывода -->
+        <RichTextBox x:Name="ChatOutput" Grid.Row="1" 
+                     IsReadOnly="True" 
+                     VerticalScrollBarVisibility="Auto"
+                     FontFamily="Consolas"
+                     FontSize="12"
+                     Background="#1E1E1E"
+                     Foreground="#DCDCDC"
+                     BorderBrush="#333333">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="Готов к работе. Нажмите кнопку для начала."/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
     </Grid>
 </Window>

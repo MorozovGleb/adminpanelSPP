@@ -68,7 +68,7 @@ namespace SPP.Client.Views.Instructor {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SPP.Client;V1.0.0.0;component/views/instructor/verificationwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SPP.Client;component/views/instructor/verificationwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\Instructor\VerificationWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

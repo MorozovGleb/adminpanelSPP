@@ -83,3 +83,9 @@ C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\I
 C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\AddVerificationWindow.baml
 C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Manager\CreateSchedule.baml
 C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Manager\CreateSchedule.g.cs
+C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\ProvideTraining.g.cs
+C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\Moduls\IntroductoryMeetingWithTheInstructor.baml
+C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\Moduls\IntroductoryMeetingWithTheInstructor.g.cs
+C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\ProvideTraining.baml
+C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\Moduls\CookingPotatoes.baml
+C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\Moduls\CookingPotatoes.g.cs

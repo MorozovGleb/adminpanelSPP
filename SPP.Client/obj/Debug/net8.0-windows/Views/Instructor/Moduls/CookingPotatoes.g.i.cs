@@ -172,7 +172,7 @@ namespace SPP.Client.Views.Instructor.Moduls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SPP.Client;component/views/instructor/moduls/cookingpotatoes.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SPP.Client;V1.0.0.0;component/views/instructor/moduls/cookingpotatoes.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\Views\Instructor\Moduls\CookingPotatoes.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

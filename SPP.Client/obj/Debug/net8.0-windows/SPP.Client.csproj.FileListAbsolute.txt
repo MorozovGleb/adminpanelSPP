@@ -89,3 +89,15 @@ C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\I
 C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\ProvideTraining.baml
 C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\Moduls\CookingPotatoes.baml
 C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\Moduls\CookingPotatoes.g.cs
+C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\Moduls\DrinksAndDesserts.baml
+C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\Moduls\DrinksAndDesserts.g.cs
+C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\Moduls\ReceivingAndPayingForOrdersAtTheCounter.baml
+C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\Moduls\ReceivingAndPayingForOrdersAtTheCounter.g.cs
+C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\Moduls\CollectingAndIssuingOrdersAtTheCounter.baml
+C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\Moduls\CollectingAndIssuingOrdersAtTheCounter.g.cs
+C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\Moduls\ServiceDelivery.baml
+C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\Moduls\ServiceDelivery.g.cs
+C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\Moduls\HallAndKiosks.baml
+C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\Moduls\HallAndKiosks.g.cs
+C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\Moduls\AcceptanceAndPaymentByCar.baml
+C:\Users\Глеб\Desktop\SPP.Client\SPP.Client\obj\Debug\net8.0-windows\Views\Instructor\Moduls\AcceptanceAndPaymentByCar.g.cs

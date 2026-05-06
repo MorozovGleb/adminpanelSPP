@@ -1,0 +1,573 @@
+﻿<Window x:Class="SPP.Client.Views.Instructor.Moduls.DeepFrying"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="Вкусно – и точка | Обучение"
+WindowState="Maximized"
+ResizeMode="NoResize"
+Topmost="False"
+Background="#F5F5F5">
+    <Window.Resources>
+        <SolidColorBrush x:Key="PrimaryRed" Color="#D52B1E"/>
+        <SolidColorBrush x:Key="DarkRed" Color="#A61C12"/>
+        <SolidColorBrush x:Key="Gold" Color="#FFC107"/>
+        <SolidColorBrush x:Key="LightGray" Color="#F9F9F9"/>
+        <SolidColorBrush x:Key="MediumGray" Color="#EEEEEE"/>
+        <SolidColorBrush x:Key="TextDark" Color="#2C2C2C"/>
+        <SolidColorBrush x:Key="TextMedium" Color="#5A5A5A"/>
+        <SolidColorBrush x:Key="WarningYellow" Color="#FFF3E0"/>
+        <SolidColorBrush x:Key="InfoBlue" Color="#F0F8FF"/>
+        <SolidColorBrush x:Key="SuccessGreen" Color="#E8F5E9"/>
+
+        <Style x:Key="PageTitleStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryRed}"/>
+            <Setter Property="Margin" Value="0,0,0,10"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+
+        <Style x:Key="SectionTitleStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="{StaticResource DarkRed}"/>
+            <Setter Property="Margin" Value="0,15,0,8"/>
+        </Style>
+
+        <Style x:Key="SubTitleStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryRed}"/>
+            <Setter Property="Margin" Value="0,10,0,5"/>
+        </Style>
+
+        <Style x:Key="BulletTextStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="{StaticResource TextDark}"/>
+            <Setter Property="Margin" Value="0,4,0,4"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+
+        <Style x:Key="CardStyle" TargetType="Border">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="CornerRadius" Value="12"/>
+            <Setter Property="Padding" Value="20"/>
+            <Setter Property="Margin" Value="0,0,0,15"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="8" ShadowDepth="2" Opacity="0.1" Color="Black"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="NavButtonStyle" TargetType="Border">
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="Padding" Value="20,12"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,10,0,5"/>
+        </Style>
+
+        <Style x:Key="CloseButtonStyle" TargetType="Button">
+            <Setter Property="Width" Value="40"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Margin" Value="0,10,20,0"/>
+            <Setter Property="Background" Value="{StaticResource PrimaryRed}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Content" Value="✕"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+
+        <ScrollViewer x:Name="MainScrollViewer" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Margin="0,0,0,0">
+            <StackPanel Margin="40,30,40,40">
+
+                <!-- ================= СТРАНИЦА 1: Ваш гость (1 из 3) ================= -->
+                <StackPanel x:Name="Page1">
+                    <Border Background="{StaticResource PrimaryRed}" CornerRadius="10" Padding="20,15" Margin="0,0,0,20">
+                        <Grid>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="🍟 " FontSize="28"/>
+                                <TextBlock Text="Ваш гость" FontSize="22" FontWeight="Bold" Foreground="White" VerticalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Text="РАБОТНИКИ И ИНСТРУКТОР" FontSize="14" Foreground="#FFEBEE" Margin="0,0,15,0" VerticalAlignment="Center"/>
+                                <Border Background="#FFEBEE" CornerRadius="20" Padding="12,5">
+                                    <TextBlock Text="1 из 3" FontWeight="Bold" Foreground="{StaticResource PrimaryRed}"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <TextBlock Text="Гости – наш приоритет" Style="{StaticResource PageTitleStyle}"/>
+                    <TextBlock Text="Мы делаем все, чтобы гости доверяли нам, предоставляя им отличное обслуживание и продукцию высочайшего качества." TextWrapping="Wrap" Margin="0,0,0,15" FontSize="14"/>
+
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Style="{StaticResource BulletTextStyle}" Text="✓ Мы работаем для гостей, ставя в приоритет качество, чистоту, гостеприимство и безопасность еды"/>
+                            <TextBlock Style="{StaticResource BulletTextStyle}" Text="✓ Мы работаем для того, чтобы дарить гостям моменты радости"/>
+                            <TextBlock Style="{StaticResource BulletTextStyle}" Text="✓ Мы слушаем и понимаем наших гостей и на основании этого постоянно улучшаемся"/>
+                        </StackPanel>
+                    </Border>
+
+                    <TextBlock Text="Чего гости ждут от наших продуктов, приготовленных во фритюре? Что они будут горячими, свежими и настолько вкусными, что захочется смаковать каждый кусочек." TextWrapping="Wrap" Margin="0,0,0,15" FontSize="14" FontStyle="Italic"/>
+
+                    <TextBlock Text="Именно работники фритюрной станции готовят продукты, которую так любят наши гости. Помните: вы не работаете с гостями напрямую и порой можете не увидеть их ни разу за день, но именно от вас во многом зависит, какие впечатления останутся у наших гостей. Ведь даже лучший в мире сервис не подарит голодному человеку такой радости, как вкусная еда. Именно вы дарите нашим гостям улыбки!" TextWrapping="Wrap" Margin="0,0,0,15" FontSize="14"/>
+
+                    <TextBlock Style="{StaticResource SectionTitleStyle}">💭 Темы для размышления:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="1. Как устанавливать контакт с гостями в процессе работы?" Margin="0,5"/>
+                            <TextBlock Text="2. Как сделать так, чтобы гостям у вас нравилось?" Margin="0,5"/>
+                            <TextBlock Text="3. Как вы можете повлиять на впечатления гостей?" Margin="0,5"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource PrimaryRed}" MouseLeftButtonDown="NextPage">
+                        <TextBlock Text="Далее →" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    </Border>
+                </StackPanel>
+
+                <!-- ================= СТРАНИЦА 2: Цикл обслуживания гостей ================= -->
+                <StackPanel x:Name="Page2" Visibility="Collapsed">
+                    <Border Background="{StaticResource PrimaryRed}" CornerRadius="10" Padding="20,15" Margin="0,0,0,20">
+                        <Grid>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="🍟 " FontSize="28"/>
+                                <TextBlock Text="Ваш гость" FontSize="22" FontWeight="Bold" Foreground="White" VerticalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Text="РАБОТНИКИ И ИНСТРУКТОР" FontSize="14" Foreground="#FFEBEE" Margin="0,0,15,0"/>
+                                <Border Background="#FFEBEE" CornerRadius="20" Padding="12,5">
+                                    <TextBlock Text="2 из 3" FontWeight="Bold" Foreground="{StaticResource PrimaryRed}"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <TextBlock Text="Цикл обслуживания гостей" Style="{StaticResource PageTitleStyle}"/>
+                    <TextBlock Text="Ваш вклад в обслуживание гостей очень важен. Даже если вы не будете взаимодействовать с гостем, вы приготовите для него любимые продукты во фритюре." TextWrapping="Wrap" Margin="0,0,0,15"/>
+
+                    <TextBlock Style="{StaticResource SectionTitleStyle}">💬 Решающие моменты</TextBlock>
+                    <Border Style="{StaticResource CardStyle}" Background="{StaticResource InfoBlue}">
+                        <StackPanel>
+                            <TextBlock FontWeight="Bold" Text="Алексей:" FontSize="14"/>
+                            <TextBlock Text="«Частенько у меня бывает всего 30-40 минут на обед, поэтому я стараюсь покупать еду там, где ее готовят вкусно и быстро. В обед многие заведения переполнены настолько, что своего заказа можно так и не дождаться. А здесь я никогда не стою в очереди подолгу, и это замечательно!»" TextWrapping="Wrap" Margin="0,10,0,0" FontStyle="Italic"/>
+                        </StackPanel>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource SectionTitleStyle}">🎯 Ожидания гостей</TextBlock>
+                    <Grid Margin="0,0,0,15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="15"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="15"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0" Background="{StaticResource MediumGray}" CornerRadius="10" Padding="10">
+                            <TextBlock Text="✅ Правильно и Точно" TextAlignment="Center" FontWeight="SemiBold" TextWrapping="Wrap"/>
+                        </Border>
+                        <Border Grid.Column="2" Background="{StaticResource MediumGray}" CornerRadius="10" Padding="10">
+                            <TextBlock Text="⚡ Быстро" TextAlignment="Center" FontWeight="SemiBold"/>
+                        </Border>
+                        <Border Grid.Column="4" Background="{StaticResource MediumGray}" CornerRadius="10" Padding="10">
+                            <TextBlock Text="😊 Дружелюбно" TextAlignment="Center" FontWeight="SemiBold"/>
+                        </Border>
+                    </Grid>
+
+                    <Border Background="{StaticResource WarningYellow}" CornerRadius="12" Padding="20" Margin="0,0,0,15">
+                        <StackPanel>
+                            <TextBlock FontWeight="Bold" Text="💬 Обсуждение с инструктором:"/>
+                            <TextBlock Text="1. На какие детали следует обратить внимание, чтобы соответствовать ожиданиям Алексея?" Margin="0,5,0,0"/>
+                            <TextBlock Text="2. Когда вы в последний раз замечали, что кто-то изо всех сил старается вас порадовать?" Margin="0,5"/>
+                            <TextBlock Text="3. Какие ошибки легко допустить, если пытаться фокусироваться только на скорости?" Margin="0,5"/>
+                        </StackPanel>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">Что необходимо делать, чтобы соответствовать ожиданиям гостей?</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock FontWeight="Bold">Правильно и Точно:</TextBlock>
+                            <TextBlock Text="• Соблюдать процедуры"/>
+                            <TextBlock Text="• Не отдавать продукт, не соответствующий стандарту!"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock FontWeight="Bold">Быстро:</TextBlock>
+                            <TextBlock Text="• Сразу реагировать на информацию на мониторах"/>
+                            <TextBlock Text="• Координировать действия с коллегами"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock FontWeight="Bold">Дружелюбно:</TextBlock>
+                            <TextBlock Text="• Улыбаться гостям (даже если они вас не видят!)"/>
+                            <TextBlock Text="• Содержать в чистоте видимые участки"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource PrimaryRed}" MouseLeftButtonDown="NextPage">
+                        <TextBlock Text="Далее →" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    </Border>
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource MediumGray}" MouseLeftButtonDown="PrevPage">
+                        <TextBlock Text="← Назад" FontSize="16" FontWeight="Bold" Foreground="{StaticResource TextDark}"/>
+                    </Border>
+                </StackPanel>
+
+                <!-- ================= СТРАНИЦА 3: Формирование впечатления + Золотой Стандарт ================= -->
+                <StackPanel x:Name="Page3" Visibility="Collapsed">
+                    <Border Background="{StaticResource PrimaryRed}" CornerRadius="10" Padding="20,15" Margin="0,0,0,20">
+                        <Grid>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="🍟 " FontSize="28"/>
+                                <TextBlock Text="Ваш гость" FontSize="22" FontWeight="Bold" Foreground="White" VerticalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Text="РАБОТНИКИ И ИНСТРУКТОР" FontSize="14" Foreground="#FFEBEE" Margin="0,0,15,0"/>
+                                <Border Background="#FFEBEE" CornerRadius="20" Padding="12,5">
+                                    <TextBlock Text="3 из 3" FontWeight="Bold" Foreground="{StaticResource PrimaryRed}"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <TextBlock Text="Формирование впечатления гостей" Style="{StaticResource PageTitleStyle}"/>
+
+                    <Border Background="{StaticResource WarningYellow}" CornerRadius="12" Padding="20" Margin="0,0,0,15">
+                        <StackPanel>
+                            <TextBlock FontWeight="Bold" Text="👀 Задание для работника:"/>
+                            <TextBlock Text="Пройдите в зал (если возможно) и посмотрите на работу фритюрной станции глазами гостя." Margin="0,5,0,0"/>
+                            <TextBlock Text="• Что вы видите? Что слышите? Как себя чувствуете?" Margin="0,5"/>
+                            <TextBlock Text="• Почему станцию фритюра нужно держать в чистоте?" Margin="0,5"/>
+                            <TextBlock Text="• Улыбайтесь, делитесь положительными эмоциями — гости вас видят!" Margin="0,5"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource CardStyle}" Background="{StaticResource SuccessGreen}">
+                        <TextBlock Text="⭐ Золотой Стандарт Качества – это описание характеристик качества, которым должны соответствовать продукты. Продукты должны аккуратно и аппетитно выглядеть, иметь правильную температуру и текстуру, быть вкусными. Никогда не отдавайте продукт гостю, если он не соответствует стандарту!" TextWrapping="Wrap" FontWeight="SemiBold"/>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">🍗 Золотой Стандарт Качества для Наггетс:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock FontWeight="Bold">Внешний вид:</TextBlock>
+                            <TextBlock Text="Светло-золотистый коричневатый оттенок, четыре формы (колокол, сапожок, косточка, круг)." Margin="0,0,0,10"/>
+                            <TextBlock FontWeight="Bold">Температура и текстура:</TextBlock>
+                            <TextBlock Text="Свежий и горячий. Панировка слегка хрустящая, нежный кляр, мясо однородной плотной текстуры, слегка сочное." Margin="0,0,0,10"/>
+                            <TextBlock FontWeight="Bold">Вкус:</TextBlock>
+                            <TextBlock Text="Лёгкий привкус панировки из поджаренной кукурузы и пшеничной муки с нотками карамелизации, мягкий куриный вкус, слегка солоноватый."/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource PrimaryRed}" MouseLeftButtonDown="NextPage">
+                        <TextBlock Text="Далее → (Безопасность)" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    </Border>
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource MediumGray}" MouseLeftButtonDown="PrevPage">
+                        <TextBlock Text="← Назад" FontSize="16" FontWeight="Bold" Foreground="{StaticResource TextDark}"/>
+                    </Border>
+                </StackPanel>
+
+                <!-- ================= СТРАНИЦА 4: Безопасность прежде всего ================= -->
+                <StackPanel x:Name="Page4" Visibility="Collapsed">
+                    <Border Background="{StaticResource PrimaryRed}" CornerRadius="10" Padding="20,15" Margin="0,0,0,20">
+                        <Grid>
+                            <TextBlock Text="Обзор" FontSize="22" FontWeight="Bold" Foreground="White"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Text="РАБОТНИКИ" FontSize="14" Foreground="#FFEBEE" Margin="0,0,15,0"/>
+                                <Border Background="#FFEBEE" CornerRadius="20" Padding="12,5">
+                                    <TextBlock Text="1 из 5" FontWeight="Bold" Foreground="{StaticResource PrimaryRed}"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <TextBlock Text="Безопасность – прежде всего" Style="{StaticResource PageTitleStyle}"/>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">⚠️ Техника безопасности:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="• Не допускайте луж на полу, постоянно поддерживайте чистоту"/>
+                            <TextBlock Text="• Не работайте с неисправным оборудованием"/>
+                            <TextBlock Text="• Будьте предельно внимательны с горячим фритюром (маслом)"/>
+                            <TextBlock Text="• КАТЕГОРИЧЕСКИ ЗАПРЕЩЕНО загружать полуфабрикаты в корзинки над ваннами с горячим фритюром!"/>
+                            <TextBlock Text="• Опускайте корзинку аккуратно, чтобы не было брызг"/>
+                        </StackPanel>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">🍽️ Безопасность пищи:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="• Мойте руки перед началом, после работы, не реже раза в час"/>
+                            <TextBlock Text="• Используйте нитриловые перчатки; для сырых продуктов — дополнительные перчатки для гриля"/>
+                            <TextBlock Text="• Используйте разное оборудование для сырых и готовых продуктов"/>
+                            <TextBlock Text="• Проверяйте сроки хранения на упаковках"/>
+                            <TextBlock Text="• Доставайте продукты только после сигнала таймера"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource CardStyle}" Background="{StaticResource SuccessGreen}">
+                        <TextBlock Text="✅ Полуфабрикаты с истекшим сроком годности необходимо выбросить в красный контейнер для пищевых отходов и списать!" TextWrapping="Wrap" FontWeight="SemiBold"/>
+                    </Border>
+
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource PrimaryRed}" MouseLeftButtonDown="NextPage">
+                        <TextBlock Text="Далее →" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    </Border>
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource MediumGray}" MouseLeftButtonDown="PrevPage">
+                        <TextBlock Text="← Назад" FontSize="16" FontWeight="Bold" Foreground="{StaticResource TextDark}"/>
+                    </Border>
+                </StackPanel>
+
+                <!-- ================= СТРАНИЦА 5: Оборудование (фритюр, UHC, корзинки) ================= -->
+                <StackPanel x:Name="Page5" Visibility="Collapsed">
+                    <Border Background="{StaticResource PrimaryRed}" CornerRadius="10" Padding="20,15" Margin="0,0,0,20">
+                        <Grid>
+                            <TextBlock Text="Обзор" FontSize="22" FontWeight="Bold" Foreground="White"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Text="РАБОТНИКИ" FontSize="14" Foreground="#FFEBEE" Margin="0,0,15,0"/>
+                                <Border Background="#FFEBEE" CornerRadius="20" Padding="12,5">
+                                    <TextBlock Text="2-3 из 5" FontWeight="Bold" Foreground="{StaticResource PrimaryRed}"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <TextBlock Text="Оборудование фритюрной станции" Style="{StaticResource PageTitleStyle}"/>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">🔥 Фритюрница:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="• Несколько ванн с горячим фритюром"/>
+                            <TextBlock Text="• Для каждого продукта — своя температура и таймер"/>
+                        </StackPanel>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">🔧 Оборудование:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="• Корзинки (большие/узкие, с разделителями/без)"/>
+                            <TextBlock Text="• Шумовка — для удаления нагара и крошек"/>
+                            <TextBlock Text="• Морозильные камеры (фризеры) рядом с фритюрницами"/>
+                            <TextBlock Text="• Лотки UHC (разных цветов для разных продуктов)"/>
+                        </StackPanel>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">📦 UHC (шкаф с подогревом):</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="• Монитор eProduction — показывает, сколько продукта должно быть в UHC"/>
+                            <TextBlock Text="• Лотки UHC с цветовой маркировкой или цветными клипсами"/>
+                            <TextBlock Text="• Таймеры срока хранения"/>
+                        </StackPanel>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">🧺 Корзинки для разных продуктов:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}" Background="{StaticResource InfoBlue}">
+                        <StackPanel>
+                            <TextBlock Text="• Большая с разделителями: Наггетсы, Стрипсы, Чикенбургер, Пикантная"/>
+                            <TextBlock Text="• Большая без разделителя: Куриная грудка, Крылья, Креветки"/>
+                            <TextBlock Text="• С длинными ячейками: Вишневые пирожки"/>
+                            <TextBlock Text="• С ячейками и ограничителем: Рыбное филе"/>
+                            <TextBlock Text="⚠️ Не смешивайте рыбные и куриные продукты в одной корзинке!"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource PrimaryRed}" MouseLeftButtonDown="NextPage">
+                        <TextBlock Text="Далее →" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    </Border>
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource MediumGray}" MouseLeftButtonDown="PrevPage">
+                        <TextBlock Text="← Назад" FontSize="16" FontWeight="Bold" Foreground="{StaticResource TextDark}"/>
+                    </Border>
+                </StackPanel>
+
+                <!-- ================= СТРАНИЦА 6: Процесс приготовления и основные принципы ================= -->
+                <StackPanel x:Name="Page6" Visibility="Collapsed">
+                    <Border Background="{StaticResource PrimaryRed}" CornerRadius="10" Padding="20,15" Margin="0,0,0,20">
+                        <Grid>
+                            <TextBlock Text="Обзор / Приготовление" FontSize="20" FontWeight="Bold" Foreground="White"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Text="РАБОТНИКИ" FontSize="14" Foreground="#FFEBEE" Margin="0,0,15,0"/>
+                                <Border Background="#FFEBEE" CornerRadius="20" Padding="12,5">
+                                    <TextBlock Text="4 из 5 / 1 из 4" FontWeight="Bold" Foreground="{StaticResource PrimaryRed}"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <TextBlock Text="Процесс приготовления во фритюре" Style="{StaticResource PageTitleStyle}"/>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">🍗 Продукты для фритюра:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="• Куриные: Наггетсы, Чикенбургер, Пикантная, Крылышки, Стрипсы, Куриная грудка"/>
+                            <TextBlock Text="• Рыбные полуфабрикаты"/>
+                            <TextBlock Text="• Креветки"/>
+                            <TextBlock Text="• Сырные продукты"/>
+                            <TextBlock Text="• Пирожки"/>
+                        </StackPanel>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">📋 Порядок доготовки:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="1️⃣ Проверьте пустые лотки UHC и монитор eProduction"/>
+                            <TextBlock Text="2️⃣ Подготовьтесь: выберите нужную ванну"/>
+                            <TextBlock Text="3️⃣ Загрузите: корзинка на поддон для сырых полуфабрикатов"/>
+                            <TextBlock Text="4️⃣ Приготовьте: опустите корзинку, нажмите таймер, при сигнале «Встряхнуть» — встряхните"/>
+                            <TextBlock Text="5️⃣ Достаньте: дайте стечь 5-10 секунд (не более 10!)"/>
+                            <TextBlock Text="6️⃣ Поместите на хранение в UHC, включите таймер"/>
+                            <TextBlock Text="7️⃣ Следите за чистотой: удаляйте нагар шумовкой"/>
+                        </StackPanel>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">📊 Система eProduction:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="• Цвет фона ячейки = цвету лотка UHC"/>
+                            <TextBlock Text="• Вертикальная система хранения в UHC"/>
+                            <TextBlock Text="• ⚠️ Если 3+ пустых лотка — сообщите менеджеру!"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource PrimaryRed}" MouseLeftButtonDown="NextPage">
+                        <TextBlock Text="Далее →" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    </Border>
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource MediumGray}" MouseLeftButtonDown="PrevPage">
+                        <TextBlock Text="← Назад" FontSize="16" FontWeight="Bold" Foreground="{StaticResource TextDark}"/>
+                    </Border>
+                </StackPanel>
+
+                <!-- ================= СТРАНИЦА 7: Куриные полуфабрикаты (приготовление) ================= -->
+                <StackPanel x:Name="Page7" Visibility="Collapsed">
+                    <Border Background="{StaticResource PrimaryRed}" CornerRadius="10" Padding="20,15" Margin="0,0,0,20">
+                        <Grid>
+                            <TextBlock Text="Куриные полуфабрикаты" FontSize="20" FontWeight="Bold" Foreground="White"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Text="РАБОТНИКИ" FontSize="14" Foreground="#FFEBEE" Margin="0,0,15,0"/>
+                                <Border Background="#FFEBEE" CornerRadius="20" Padding="12,5">
+                                    <TextBlock Text="2 из 4" FontWeight="Bold" Foreground="{StaticResource PrimaryRed}"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <TextBlock Text="Приготовление куриных полуфабрикатов" Style="{StaticResource PageTitleStyle}"/>
+
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="1️⃣ Посмотрите на пустые лотки UHC и eProduction"/>
+                            <TextBlock Text="2️⃣ Выберите ванну с нужным продуктом на дисплее"/>
+                            <TextBlock Text="3️⃣ Загрузите: корзинка на поддон для сырых полуфабрикатов, используйте голубые перчатки"/>
+                            <TextBlock Text="4️⃣ Опустите корзинку, нажмите таймер"/>
+                            <TextBlock Text="5️⃣ При сигнале «Встряхнуть» — встряхните"/>
+                            <TextBlock Text="6️⃣ Достаньте, дайте стечь 5-10 секунд"/>
+                            <TextBlock Text="7️⃣ Переложите в лоток UHC (Чикенбургер и Пикантные — в один слой!)"/>
+                            <TextBlock Text="8️⃣ Поместите в UHC, включите таймер (20 минут)"/>
+                            <TextBlock Text="9️⃣ Удаляйте нагар шумовкой"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource CardStyle}" Background="{StaticResource WarningYellow}">
+                        <StackPanel>
+                            <TextBlock FontWeight="Bold" Text="⚠️ Важно:"/>
+                            <TextBlock Text="• Не смешивайте новую партию с предыдущей в UHC!"/>
+                            <TextBlock Text="• При истечении срока хранения — сначала поставьте жарить новый продукт, затем списывайте просроченный"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource PrimaryRed}" MouseLeftButtonDown="NextPage">
+                        <TextBlock Text="Далее →" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    </Border>
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource MediumGray}" MouseLeftButtonDown="PrevPage">
+                        <TextBlock Text="← Назад" FontSize="16" FontWeight="Bold" Foreground="{StaticResource TextDark}"/>
+                    </Border>
+                </StackPanel>
+
+                <!-- ================= СТРАНИЦА 8: Попробуй ================= -->
+                <StackPanel x:Name="Page8" Visibility="Collapsed">
+                    <Border Background="{StaticResource PrimaryRed}" CornerRadius="10" Padding="20,15" Margin="0,0,0,20">
+                        <Grid>
+                            <TextBlock Text="Попробуй!" FontSize="22" FontWeight="Bold" Foreground="White"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Text="РАБОТНИКИ И ИНСТРУКТОР" FontSize="14" Foreground="#FFEBEE" Margin="0,0,15,0"/>
+                                <Border Background="#FFEBEE" CornerRadius="20" Padding="12,5">
+                                    <TextBlock Text="3 из 4" FontWeight="Bold" Foreground="{StaticResource PrimaryRed}"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+
+                    <Border Style="{StaticResource CardStyle}" Background="{StaticResource WarningYellow}">
+                        <TextBlock Text="👨‍🍳 Теперь ваша очередь! Инструктор будет наблюдать за вами и помогать. Приготовьте несколько партий куриных полуфабрикатов." TextWrapping="Wrap" FontSize="15"/>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">📝 Основные действия:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="• Определите, что и сколько готовить по eProduction"/>
+                            <TextBlock Text="• Выберите ванну с нужными настройками"/>
+                            <TextBlock Text="• Проверьте качество полуфабриката"/>
+                            <TextBlock Text="• Приготовьте, соблюдая процедуры"/>
+                            <TextBlock Text="• Переложите в лоток, поместите в UHC"/>
+                            <TextBlock Text="• Следите за чистотой, удаляйте нагар"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource PrimaryRed}" MouseLeftButtonDown="NextPage">
+                        <TextBlock Text="Далее →" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    </Border>
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource MediumGray}" MouseLeftButtonDown="PrevPage">
+                        <TextBlock Text="← Назад" FontSize="16" FontWeight="Bold" Foreground="{StaticResource TextDark}"/>
+                    </Border>
+                </StackPanel>
+
+                <!-- ================= СТРАНИЦА 9: Секреты экономии секунд ================= -->
+                <StackPanel x:Name="Page9" Visibility="Collapsed">
+                    <Border Background="{StaticResource PrimaryRed}" CornerRadius="10" Padding="20,15" Margin="0,0,0,20">
+                        <Grid>
+                            <TextBlock Text="Секреты экономии секунд" FontSize="20" FontWeight="Bold" Foreground="White"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Text="РАБОТНИКИ" FontSize="14" Foreground="#FFEBEE" Margin="0,0,15,0"/>
+                                <Border Background="#FFEBEE" CornerRadius="20" Padding="12,5">
+                                    <TextBlock Text="1 из 4" FontWeight="Bold" Foreground="{StaticResource PrimaryRed}"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <TextBlock Text="Секреты экономии секунд на фритюре" Style="{StaticResource PageTitleStyle}"/>
+
+                    <Border Style="{StaticResource CardStyle}" Background="{StaticResource SuccessGreen}">
+                        <StackPanel>
+                            <TextBlock Text="⚡ Размещайте лотки одного цвета друг на друге"/>
+                            <TextBlock Text="⚡ Используйте узкие корзины"/>
+                            <TextBlock Text="⚡ Ставьте корзину в ближайшую к фасовочному столу ванну"/>
+                            <TextBlock Text="⚡ Не допускайте, чтобы корзинка висела над фритюром более 10 секунд"/>
+                            <TextBlock Text="⚡ Заранее пополняйте запасы перед пиковыми часами"/>
+                            <TextBlock Text="⚡ Сообщайте Сборщику о поступлении продукта в UHC"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource PrimaryRed}" MouseLeftButtonDown="NextPage">
+                        <TextBlock Text="Завершить обучение" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    </Border>
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource MediumGray}" MouseLeftButtonDown="PrevPage">
+                        <TextBlock Text="← Назад" FontSize="16" FontWeight="Bold" Foreground="{StaticResource TextDark}"/>
+                    </Border>
+                </StackPanel>
+
+                <!-- ================= ФИНАЛЬНАЯ СТРАНИЦА ================= -->
+                <StackPanel x:Name="PageEnd" Visibility="Collapsed">
+                    <Border Background="{StaticResource PrimaryRed}" CornerRadius="10" Padding="40,30" Margin="0,50,0,0">
+                        <StackPanel HorizontalAlignment="Center">
+                            <TextBlock Text="🎉 Поздравляем!" FontSize="32" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Вы успешно прошли обучение по фритюрной станции" FontSize="20" Foreground="#FFEBEE" HorizontalAlignment="Center" Margin="0,15,0,0" TextWrapping="Wrap" TextAlignment="Center"/>
+                            <TextBlock Text="Теперь вы готовы готовить любимые продукты гостей!" FontSize="18" Foreground="#FFEBEE" HorizontalAlignment="Center" Margin="0,10,0,20"/>
+                            <Border Background="White" CornerRadius="30" Padding="20,10" Cursor="Hand" HorizontalAlignment="Center" MouseLeftButtonDown="RestartTraining">
+                                <TextBlock Text="🔄 Пройти заново" FontSize="16" FontWeight="Bold" Foreground="{StaticResource PrimaryRed}"/>
+                            </Border>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

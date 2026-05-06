@@ -8,10 +8,46 @@
     <Compile Update="Views\Instructor\AddVerificationWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Instructor\Moduls\AcceptanceAndPaymentByCar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Instructor\Moduls\AgingAndPreparationOfProducts.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Instructor\Moduls\CafeBaking.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Instructor\Moduls\CollectingAndIssuingOrdersAtTheCounter.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Instructor\Moduls\CollectionAndDeliveryOfOrdersForCars.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Instructor\Moduls\CookingPotatoes.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Instructor\Moduls\DeepFrying.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Instructor\Moduls\DrinksAndDesserts.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Instructor\Moduls\Grilling.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Instructor\Moduls\HallAndKiosks.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Instructor\Moduls\IntroductoryMeetingWithTheInstructor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Instructor\Moduls\PreparingTheMainMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Instructor\Moduls\ReceivingAndPayingForOrdersAtTheCounter.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Instructor\Moduls\ServiceDelivery.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\Instructor\ProvideTraining.xaml.cs">

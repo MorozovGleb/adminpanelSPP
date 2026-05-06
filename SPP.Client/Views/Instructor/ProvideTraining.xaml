@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SPP.Client.Views.Instructor"
         mc:Ignorable="d"
-        Title="ProvideTraining" Height="450" Width="800">
+        Title="ProvideTraining" Height="1200" Width="800">
     <Window.Resources>
 
         <!-- Фирменная кнопка -->
@@ -49,13 +49,17 @@
     </Window.Resources>
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="133*"/>
+        </Grid.ColumnDefinitions>
 
         <Border Background="White"
                 CornerRadius="15"
                 Padding="40"
                 Width="602"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Center">
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="99,0,0,0">
 
             <StackPanel>
 
@@ -79,7 +83,42 @@
                 <Button Content="Приготовление картофеля"
         Style="{StaticResource ActionButtonStyle}"
         Click="Potatoes_Click"/>
-
+                <Button Content="Напитки и десерты"
+Style="{StaticResource ActionButtonStyle}"
+Click="DrinksAndDesserts_Click"/>
+                <Button Content="Прием и оплата заказов на прилавке"
+Style="{StaticResource ActionButtonStyle}"
+Click="Mayachok_Click"/>
+                <Button Content="Сбор и выдача заказов на прилавке"
+Style="{StaticResource ActionButtonStyle}"
+Click="Prilavok_Click"/>
+                <Button Content="Сервис Доставка"
+Style="{StaticResource ActionButtonStyle}"
+Click="Delivery_Click"/>
+                <Button Content="Зал и киоски самообслуживания"
+Style="{StaticResource ActionButtonStyle}"
+Click="HallAndKiosks_Click"/>
+                <Button Content="Прием и оплата на автораздаче"
+Style="{StaticResource ActionButtonStyle}"
+Click="Oplata_Click"/>
+                <Button Content="Сбор и выдача заказов на автораздаче"
+Style="{StaticResource ActionButtonStyle}"
+Click="SborAvto_Click"/>
+                <Button Content="Приготовление на гриле"
+Style="{StaticResource ActionButtonStyle}"
+Click="Grill_Click"/>
+                <Button Content="Приготовление во фитюре"
+Style="{StaticResource ActionButtonStyle}"
+Click="Frying_Click"/>
+                <Button Content="Приготовление основого меню"
+Style="{StaticResource ActionButtonStyle}"
+Click="Osnovnoemenu_Click"/>
+                <Button Content="Выдержка и подготовка продуктов"
+Style="{StaticResource ActionButtonStyle}"
+Click="Popolnenie_Click"/>
+                <Button Content="Кафе.Выпекание"
+Style="{StaticResource ActionButtonStyle}"
+Click="Cafe_Click"/>
                 <!-- Кнопки -->
 
 

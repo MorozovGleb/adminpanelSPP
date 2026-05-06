@@ -1,0 +1,641 @@
+﻿<Window x:Class="SPP.Client.Views.Instructor.Moduls.CollectingAndIssuingOrdersAtTheCounter"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="Вкусно – и точка | Обучение"
+WindowState="Maximized"
+ResizeMode="NoResize"
+Topmost="False"
+Background="#F5F5F5">
+    <Window.Resources>
+        <SolidColorBrush x:Key="PrimaryRed" Color="#D52B1E"/>
+        <SolidColorBrush x:Key="DarkRed" Color="#A61C12"/>
+        <SolidColorBrush x:Key="Gold" Color="#FFC107"/>
+        <SolidColorBrush x:Key="LightGray" Color="#F9F9F9"/>
+        <SolidColorBrush x:Key="MediumGray" Color="#EEEEEE"/>
+        <SolidColorBrush x:Key="TextDark" Color="#2C2C2C"/>
+        <SolidColorBrush x:Key="TextMedium" Color="#5A5A5A"/>
+        <SolidColorBrush x:Key="WarningYellow" Color="#FFF3E0"/>
+        <SolidColorBrush x:Key="InfoBlue" Color="#F0F8FF"/>
+        <SolidColorBrush x:Key="SuccessGreen" Color="#E8F5E9"/>
+
+        <Style x:Key="PageTitleStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryRed}"/>
+            <Setter Property="Margin" Value="0,0,0,10"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+
+        <Style x:Key="SectionTitleStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="{StaticResource DarkRed}"/>
+            <Setter Property="Margin" Value="0,15,0,8"/>
+        </Style>
+
+        <Style x:Key="SubTitleStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryRed}"/>
+            <Setter Property="Margin" Value="0,10,0,5"/>
+        </Style>
+
+        <Style x:Key="BulletTextStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="{StaticResource TextDark}"/>
+            <Setter Property="Margin" Value="0,4,0,4"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+
+        <Style x:Key="NumberedStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="{StaticResource TextDark}"/>
+            <Setter Property="Margin" Value="0,3,0,3"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+
+        <Style x:Key="CardStyle" TargetType="Border">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="CornerRadius" Value="12"/>
+            <Setter Property="Padding" Value="20"/>
+            <Setter Property="Margin" Value="0,0,0,15"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="8" ShadowDepth="2" Opacity="0.1" Color="Black"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="NavButtonStyle" TargetType="Border">
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="Padding" Value="20,12"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,10,0,5"/>
+        </Style>
+
+        <Style x:Key="CloseButtonStyle" TargetType="Button">
+            <Setter Property="Width" Value="40"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Margin" Value="0,10,20,0"/>
+            <Setter Property="Background" Value="{StaticResource PrimaryRed}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Content" Value="✕"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+
+        <ScrollViewer x:Name="MainScrollViewer" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Margin="0,0,0,0">
+            <StackPanel Margin="40,30,40,40">
+
+                <!-- ================= СТРАНИЦА 1: Сбор заказов 1/8 - Экспо-монитор ================= -->
+                <StackPanel x:Name="Page1">
+                    <Border Background="{StaticResource PrimaryRed}" CornerRadius="10" Padding="20,15" Margin="0,0,0,20">
+                        <Grid>
+                            <TextBlock Text="Сбор заказов" FontSize="22" FontWeight="Bold" Foreground="White"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Text="РАБОТНИКИ" FontSize="14" Foreground="#FFEBEE" Margin="0,0,15,0"/>
+                                <Border Background="#FFEBEE" CornerRadius="20" Padding="12,5">
+                                    <TextBlock Text="1 из 8" FontWeight="Bold" Foreground="{StaticResource PrimaryRed}"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <TextBlock Text="Экспо-монитор" Style="{StaticResource PageTitleStyle}"/>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">🖥️ Информация на экспо-мониторе:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="• Сведения о заказе: бургеры, картофель, игрушки"/>
+                            <TextBlock Text="• На поднос (ВЗ) или в пакет (НВ)"/>
+                            <TextBlock Text="• Таймер заказа (в секундах)"/>
+                            <TextBlock Text="• Линия приготовления"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource CardStyle}" Background="{StaticResource InfoBlue}">
+                        <TextBlock Text="💡 Внимательно читайте информацию на экране. Это поможет вам избежать ошибок при сборе заказов." TextWrapping="Wrap" FontWeight="SemiBold"/>
+                    </Border>
+
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource PrimaryRed}" MouseLeftButtonDown="NextPage">
+                        <TextBlock Text="Далее →" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    </Border>
+                </StackPanel>
+
+                <!-- ================= СТРАНИЦА 2: Сбор заказов 2/8 - Порядок сбора ================= -->
+                <StackPanel x:Name="Page2" Visibility="Collapsed">
+                    <Border Background="{StaticResource PrimaryRed}" CornerRadius="10" Padding="20,15" Margin="0,0,0,20">
+                        <Grid>
+                            <TextBlock Text="Сбор заказов" FontSize="22" FontWeight="Bold" Foreground="White"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Text="РАБОТНИКИ" FontSize="14" Foreground="#FFEBEE" Margin="0,0,15,0"/>
+                                <Border Background="#FFEBEE" CornerRadius="20" Padding="12,5">
+                                    <TextBlock Text="2 из 8" FontWeight="Bold" Foreground="{StaticResource PrimaryRed}"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <TextBlock Text="Порядок сбора наименований в заказ" Style="{StaticResource PageTitleStyle}"/>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">📋 Последовательность сбора:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="1. Бургеры, роллы, стартеры и салаты (по экспо-монитору и чеку сбора)"/>
+                            <TextBlock Text="2. Картофель"/>
+                            <TextBlock Text="3. Напитки и десерты: сначала холодные, потом горячие"/>
+                            <TextBlock Text="4. Мороженое и Айс Де Люкс — в последнюю очередь!"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource CardStyle}" Background="{StaticResource WarningYellow}">
+                        <TextBlock Text="🍦 Важно! Порядок сбора позволяет сохранить горячие продукты горячими, а холодные — холодными. Мороженое собирайте в самом конце, чтобы оно не растаяло." TextWrapping="Wrap"/>
+                    </Border>
+
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource PrimaryRed}" MouseLeftButtonDown="NextPage">
+                        <TextBlock Text="Далее →" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    </Border>
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource MediumGray}" MouseLeftButtonDown="PrevPage">
+                        <TextBlock Text="← Назад" FontSize="16" FontWeight="Bold" Foreground="{StaticResource TextDark}"/>
+                    </Border>
+                </StackPanel>
+
+                <!-- ================= СТРАНИЦА 3: Сбор заказов 3/8 - Расположение на подносе ================= -->
+                <StackPanel x:Name="Page3" Visibility="Collapsed">
+                    <Border Background="{StaticResource PrimaryRed}" CornerRadius="10" Padding="20,15" Margin="0,0,0,20">
+                        <Grid>
+                            <TextBlock Text="Сбор заказов" FontSize="22" FontWeight="Bold" Foreground="White"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Text="РАБОТНИКИ" FontSize="14" Foreground="#FFEBEE" Margin="0,0,15,0"/>
+                                <Border Background="#FFEBEE" CornerRadius="20" Padding="12,5">
+                                    <TextBlock Text="3 из 8" FontWeight="Bold" Foreground="{StaticResource PrimaryRed}"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <TextBlock Text="Расположение продуктов на подносе" Style="{StaticResource PageTitleStyle}"/>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">🍽️ Правила расположения:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="• Бургеры — так, чтобы сразу привлекали внимание"/>
+                            <TextBlock Text="• Справа: Картофель — стоя, опираясь на бургер"/>
+                            <TextBlock Text="• Слева: напитки и десерты (горячие напитки, газировка, коктейли, мороженое)"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource CardStyle}" Background="{StaticResource InfoBlue}">
+                        <TextBlock Text="✨ Внешний вид продуктов очень важен. Если вы все сделаете правильно, гости получат еще больше удовольствия от вкусной еды." TextWrapping="Wrap" FontStyle="Italic"/>
+                    </Border>
+
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource PrimaryRed}" MouseLeftButtonDown="NextPage">
+                        <TextBlock Text="Далее →" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    </Border>
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource MediumGray}" MouseLeftButtonDown="PrevPage">
+                        <TextBlock Text="← Назад" FontSize="16" FontWeight="Bold" Foreground="{StaticResource TextDark}"/>
+                    </Border>
+                </StackPanel>
+
+                <!-- ================= СТРАНИЦА 4: Сбор заказов 4/8 - Пакеты ================= -->
+                <StackPanel x:Name="Page4" Visibility="Collapsed">
+                    <Border Background="{StaticResource PrimaryRed}" CornerRadius="10" Padding="20,15" Margin="0,0,0,20">
+                        <Grid>
+                            <TextBlock Text="Сбор заказов" FontSize="22" FontWeight="Bold" Foreground="White"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Text="РАБОТНИКИ" FontSize="14" Foreground="#FFEBEE" Margin="0,0,15,0"/>
+                                <Border Background="#FFEBEE" CornerRadius="20" Padding="12,5">
+                                    <TextBlock Text="4 из 8" FontWeight="Bold" Foreground="{StaticResource PrimaryRed}"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <TextBlock Text="Выбор правильного пакета для заказа" Style="{StaticResource PageTitleStyle}"/>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">📦 Размеры пакетов:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="• Пакет A — от 1 до 3 наименований"/>
+                            <TextBlock Text="• Пакет B — от 4 до 6 наименований (для двух человек)"/>
+                            <TextBlock Text="• Пакет C — от 7 до 9 наименований (для семьи)"/>
+                            <TextBlock Text="• Пакет бумажный с ручками — только при наличии в заказе"/>
+                        </StackPanel>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">📦 Правила упаковки:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="• Не наполняйте пакеты сверх меры"/>
+                            <TextBlock Text="• При совещании — первый слой: бургеры в коробочках (верхней частью вверх)"/>
+                            <TextBlock Text="• Второй слой: бургеры в мягкой упаковке"/>
+                            <TextBlock Text="• Справа: Картофель вертикально"/>
+                            <TextBlock Text="• Салфетки и приборы — сбоку"/>
+                            <TextBlock Text="• Соусы — на бургеры (более 5 соусов — в отдельный пакет А)"/>
+                            <TextBlock Text="• Напитки — отдельно, с подставкой при 2+ напитках"/>
+                            <TextBlock Text="• Холодные и горячие продукты — в РАЗНЫХ пакетах!"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource PrimaryRed}" MouseLeftButtonDown="NextPage">
+                        <TextBlock Text="Далее →" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    </Border>
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource MediumGray}" MouseLeftButtonDown="PrevPage">
+                        <TextBlock Text="← Назад" FontSize="16" FontWeight="Bold" Foreground="{StaticResource TextDark}"/>
+                    </Border>
+                </StackPanel>
+
+                <!-- ================= СТРАНИЦА 5: Сбор заказов 5/8 - Сброс заказа ================= -->
+                <StackPanel x:Name="Page5" Visibility="Collapsed">
+                    <Border Background="{StaticResource PrimaryRed}" CornerRadius="10" Padding="20,15" Margin="0,0,0,20">
+                        <Grid>
+                            <TextBlock Text="Сбор заказов" FontSize="22" FontWeight="Bold" Foreground="White"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Text="РАБОТНИКИ" FontSize="14" Foreground="#FFEBEE" Margin="0,0,15,0"/>
+                                <Border Background="#FFEBEE" CornerRadius="20" Padding="12,5">
+                                    <TextBlock Text="5-6 из 8" FontWeight="Bold" Foreground="{StaticResource PrimaryRed}"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <TextBlock Text="Сброс заказа с экспо-монитора" Style="{StaticResource PageTitleStyle}"/>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">🔄 Процедура сброса:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="• Сброс осуществляется пультом управления"/>
+                            <TextBlock Text="• Номер кнопки = номеру ячейки на мониторе (всего 8 ячеек)"/>
+                            <TextBlock Text="• Нажмите кнопку ПОСЛЕ того, как собрали все наименования со стола ОАТ"/>
+                            <TextBlock Text="• Заказы «Вне очереди» — в первую очередь!"/>
+                            <TextBlock Text="• Завершение: разместите заказ в зоне выдачи, проверьте комплектность"/>
+                        </StackPanel>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">⚡ Секреты экономии секунд:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}" Background="{StaticResource SuccessGreen}">
+                        <StackPanel>
+                            <TextBlock Text="• Начинайте сбор только после готовности всех продуктов ОАТ"/>
+                            <TextBlock Text="• Отслеживайте заказы «вне очереди»"/>
+                            <TextBlock Text="• Соблюдайте маршрут: ОАТ → картофель → напитки → выдача"/>
+                            <TextBlock Text="• Не оставляйте заказ без внимания в процессе сбора"/>
+                            <TextBlock Text="• Используйте пакет нужного размера"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource PrimaryRed}" MouseLeftButtonDown="NextPage">
+                        <TextBlock Text="Далее →" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    </Border>
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource MediumGray}" MouseLeftButtonDown="PrevPage">
+                        <TextBlock Text="← Назад" FontSize="16" FontWeight="Bold" Foreground="{StaticResource TextDark}"/>
+                    </Border>
+                </StackPanel>
+
+                <!-- ================= СТРАНИЦА 6: Сбор заказов 7/8 - Попробуй ================= -->
+                <StackPanel x:Name="Page6" Visibility="Collapsed">
+                    <Border Background="{StaticResource PrimaryRed}" CornerRadius="10" Padding="20,15" Margin="0,0,0,20">
+                        <Grid>
+                            <TextBlock Text="Сбор заказов" FontSize="22" FontWeight="Bold" Foreground="White"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Text="РАБОТНИКИ И ИНСТРУКТОР" FontSize="14" Foreground="#FFEBEE" Margin="0,0,15,0"/>
+                                <Border Background="#FFEBEE" CornerRadius="20" Padding="12,5">
+                                    <TextBlock Text="7 из 8" FontWeight="Bold" Foreground="{StaticResource PrimaryRed}"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <TextBlock Text="Попробуй!" Style="{StaticResource PageTitleStyle}"/>
+
+                    <Border Style="{StaticResource CardStyle}" Background="{StaticResource WarningYellow}">
+                        <TextBlock Text="👨‍🍳 Теперь ваша очередь! Инструктор будет работать вместе с вами, шаг за шагом объяснять, как правильно собирать заказы." TextWrapping="Wrap" FontSize="15"/>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">📝 Основные этапы сбора заказа:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="1. Бургеры, роллы, стартеры и салаты"/>
+                            <TextBlock Text="2. Картофель"/>
+                            <TextBlock Text="3. Напитки и десерты (холодные → горячие)"/>
+                            <TextBlock Text="4. Мороженое и Айс Де Люкс — в последнюю очередь"/>
+                        </StackPanel>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">🍽️ Расположение на подносе:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="• Бургеры — на видное место"/>
+                            <TextBlock Text="• Справа — Картофель (стоя)"/>
+                            <TextBlock Text="• Слева — напитки и десерты"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource PrimaryRed}" MouseLeftButtonDown="NextPage">
+                        <TextBlock Text="Далее →" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    </Border>
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource MediumGray}" MouseLeftButtonDown="PrevPage">
+                        <TextBlock Text="← Назад" FontSize="16" FontWeight="Bold" Foreground="{StaticResource TextDark}"/>
+                    </Border>
+                </StackPanel>
+
+                <!-- ================= СТРАНИЦА 7: Выдача заказа 1/6 - Соусы и проверка ================= -->
+                <StackPanel x:Name="Page7" Visibility="Collapsed">
+                    <Border Background="{StaticResource PrimaryRed}" CornerRadius="10" Padding="20,15" Margin="0,0,0,20">
+                        <Grid>
+                            <TextBlock Text="Выдача заказа" FontSize="22" FontWeight="Bold" Foreground="White"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Text="РАБОТНИКИ" FontSize="14" Foreground="#FFEBEE" Margin="0,0,15,0"/>
+                                <Border Background="#FFEBEE" CornerRadius="20" Padding="12,5">
+                                    <TextBlock Text="1 из 6" FontWeight="Bold" Foreground="{StaticResource PrimaryRed}"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <TextBlock Text="Сбор порционных соусов и проверка заказа" Style="{StaticResource PageTitleStyle}"/>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">🥫 Соусы для заказа «на поднос»:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="• Строго в нижнем левом углу подноса"/>
+                            <TextBlock Text="• Этикеткой вверх"/>
+                            <TextBlock Text="• В один ряд (не кладите соусы друг на друга)"/>
+                            <TextBlock Text="• Не кладите на соусы салфетки и приборы"/>
+                        </StackPanel>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">🥫 Соусы для заказа «навынос»:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="• Салфетки и приборы — сбоку от продуктов"/>
+                            <TextBlock Text="• Соусы — в пакет на бургеры"/>
+                            <TextBlock Text="• Более 5 соусов — в отдельный пакет А"/>
+                        </StackPanel>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">✅ Проверка заказа перед выдачей:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}" Background="{StaticResource InfoBlue}">
+                        <StackPanel>
+                            <TextBlock Text="• Проверьте по чеку: все ли продукты в заказе"/>
+                            <TextBlock Text="• Проверьте качество продуктов"/>
+                            <TextBlock Text="• Убедитесь, что положили все соусы, салфетки, приборы"/>
+                            <TextBlock Text="• Проверьте спецгриль"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource PrimaryRed}" MouseLeftButtonDown="NextPage">
+                        <TextBlock Text="Далее →" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    </Border>
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource MediumGray}" MouseLeftButtonDown="PrevPage">
+                        <TextBlock Text="← Назад" FontSize="16" FontWeight="Bold" Foreground="{StaticResource TextDark}"/>
+                    </Border>
+                </StackPanel>
+
+                <!-- ================= СТРАНИЦА 8: Выдача заказа 2/6 - Выдача на прилавке ================= -->
+                <StackPanel x:Name="Page8" Visibility="Collapsed">
+                    <Border Background="{StaticResource PrimaryRed}" CornerRadius="10" Padding="20,15" Margin="0,0,0,20">
+                        <Grid>
+                            <TextBlock Text="Выдача заказа" FontSize="22" FontWeight="Bold" Foreground="White"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Text="РАБОТНИКИ" FontSize="14" Foreground="#FFEBEE" Margin="0,0,15,0"/>
+                                <Border Background="#FFEBEE" CornerRadius="20" Padding="12,5">
+                                    <TextBlock Text="2 из 6" FontWeight="Bold" Foreground="{StaticResource PrimaryRed}"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <TextBlock Text="Выдача заказов на прилавке" Style="{StaticResource PageTitleStyle}"/>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">📋 Процедура выдачи:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="1. Найдите заказ на презентер-мониторе"/>
+                            <TextBlock Text="2. Сбросьте заказ с презентер-монитора"/>
+                            <TextBlock Text="3. Поприветствуйте гостя, сверьте номер заказа"/>
+                            <TextBlock Text="4. Выдайте заказ: держите пакет/поднос, скажите «Спасибо за заказ! Приятного аппетита!»"/>
+                            <TextBlock Text="5. Решайте просьбы и жалобы гостя"/>
+                            <TextBlock Text="6. Дождитесь, пока гость отвернется"/>
+                            <TextBlock Text="7. Удалите номер заказа с ORB"/>
+                        </StackPanel>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">📢 Действия при невостребованном заказе:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}" Background="{StaticResource WarningYellow}">
+                        <StackPanel>
+                            <TextBlock Text="• Поднимите чек, произносите номер вслух"/>
+                            <TextBlock Text="• Не сбрасывайте номер с ORB"/>
+                            <TextBlock Text="• Проговорите основные наименования из заказа"/>
+                            <TextBlock Text="• Сообщите Лидеру Гостеприимства"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource PrimaryRed}" MouseLeftButtonDown="NextPage">
+                        <TextBlock Text="Далее →" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    </Border>
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource MediumGray}" MouseLeftButtonDown="PrevPage">
+                        <TextBlock Text="← Назад" FontSize="16" FontWeight="Bold" Foreground="{StaticResource TextDark}"/>
+                    </Border>
+                </StackPanel>
+
+                <!-- ================= СТРАНИЦА 9: Выдача заказа 3/6 - Обслуживание за столами ================= -->
+                <StackPanel x:Name="Page9" Visibility="Collapsed">
+                    <Border Background="{StaticResource PrimaryRed}" CornerRadius="10" Padding="20,15" Margin="0,0,0,20">
+                        <Grid>
+                            <TextBlock Text="Выдача заказа" FontSize="22" FontWeight="Bold" Foreground="White"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Text="РАБОТНИКИ" FontSize="14" Foreground="#FFEBEE" Margin="0,0,15,0"/>
+                                <Border Background="#FFEBEE" CornerRadius="20" Padding="12,5">
+                                    <TextBlock Text="3 из 6" FontWeight="Bold" Foreground="{StaticResource PrimaryRed}"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <TextBlock Text="Обслуживание за столами" Style="{StaticResource PageTitleStyle}"/>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">🪑 Правила обслуживания:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="• Будьте внимательны, проверяйте качество и точность"/>
+                            <TextBlock Text="• Определите местоположение гостя по локатору (1-99) или номеру стола (200-500)"/>
+                            <TextBlock Text="• Носите фартук с карманами для приправ и приборов"/>
+                            <TextBlock Text="• Убедитесь, что у гостя есть всё необходимое"/>
+                            <TextBlock Text="• Заберите локатор со стола"/>
+                            <TextBlock Text="• Позаботьтесь о семье (шарики, сувениры для детей)"/>
+                            <TextBlock Text="• При больших заказах — попросите помощи"/>
+                        </StackPanel>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">🚗 Выдача заказов «на парковке»:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}" Background="{StaticResource InfoBlue}">
+                        <StackPanel>
+                            <TextBlock Text="• Соберите заказ в пакет, убедитесь в комплектности"/>
+                            <TextBlock Text="• Найдите гостя по номеру парковочной зоны, номеру и цвету машины"/>
+                            <TextBlock Text="• Поприветствуйте, вручите заказ, поблагодарите"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource PrimaryRed}" MouseLeftButtonDown="NextPage">
+                        <TextBlock Text="Далее →" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    </Border>
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource MediumGray}" MouseLeftButtonDown="PrevPage">
+                        <TextBlock Text="← Назад" FontSize="16" FontWeight="Bold" Foreground="{StaticResource TextDark}"/>
+                    </Border>
+                </StackPanel>
+
+                <!-- ================= СТРАНИЦА 10: Выдача заказа 4/6 - Жалобы гостей ================= -->
+                <StackPanel x:Name="Page10" Visibility="Collapsed">
+                    <Border Background="{StaticResource PrimaryRed}" CornerRadius="10" Padding="20,15" Margin="0,0,0,20">
+                        <Grid>
+                            <TextBlock Text="Выдача заказа" FontSize="22" FontWeight="Bold" Foreground="White"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Text="РАБОТНИКИ" FontSize="14" Foreground="#FFEBEE" Margin="0,0,15,0"/>
+                                <Border Background="#FFEBEE" CornerRadius="20" Padding="12,5">
+                                    <TextBlock Text="4 из 6" FontWeight="Bold" Foreground="{StaticResource PrimaryRed}"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <TextBlock Text="Что делать, если гость жалуется?" Style="{StaticResource PageTitleStyle}"/>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">🔄 4 шага возврата гостей:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="1️⃣ Выслушайте претензии гостя, поймите, что его не устраивает"/>
+                            <TextBlock Text="2️⃣ Извинитесь, скажите, что готовы помочь"/>
+                            <TextBlock Text="3️⃣ Решите проблему или обратитесь к менеджеру"/>
+                            <TextBlock Text="4️⃣ Поблагодарите гостя"/>
+                        </StackPanel>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">🚨 Случаи для немедленного обращения к менеджеру:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}" Background="{StaticResource WarningYellow}">
+                        <StackPanel>
+                            <TextBlock Text="• Инородные предметы в еде / недожаренный продукт"/>
+                            <TextBlock Text="• Требование возврата денег"/>
+                            <TextBlock Text="• Оскорбление или угроза"/>
+                            <TextBlock Text="• Травма или претензии к безопасности"/>
+                        </StackPanel>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">💬 Фразы принятия:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}" Background="{StaticResource SuccessGreen}">
+                        <StackPanel>
+                            <TextBlock Text="• «Я вас понимаю»"/>
+                            <TextBlock Text="• «На вашем месте я себя чувствовал бы так же»"/>
+                            <TextBlock Text="• «Мне важно ваше мнение»"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource PrimaryRed}" MouseLeftButtonDown="NextPage">
+                        <TextBlock Text="Далее →" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    </Border>
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource MediumGray}" MouseLeftButtonDown="PrevPage">
+                        <TextBlock Text="← Назад" FontSize="16" FontWeight="Bold" Foreground="{StaticResource TextDark}"/>
+                    </Border>
+                </StackPanel>
+
+                <!-- ================= СТРАНИЦА 11: Выдача заказа 5/6 - Попробуй ================= -->
+                <StackPanel x:Name="Page11" Visibility="Collapsed">
+                    <Border Background="{StaticResource PrimaryRed}" CornerRadius="10" Padding="20,15" Margin="0,0,0,20">
+                        <Grid>
+                            <TextBlock Text="Выдача заказа" FontSize="22" FontWeight="Bold" Foreground="White"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Text="РАБОТНИКИ И ИНСТРУКТОР" FontSize="14" Foreground="#FFEBEE" Margin="0,0,15,0"/>
+                                <Border Background="#FFEBEE" CornerRadius="20" Padding="12,5">
+                                    <TextBlock Text="5 из 6" FontWeight="Bold" Foreground="{StaticResource PrimaryRed}"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <TextBlock Text="Попробуй!" Style="{StaticResource PageTitleStyle}"/>
+
+                    <Border Style="{StaticResource CardStyle}" Background="{StaticResource WarningYellow}">
+                        <TextBlock Text="👨‍🍳 Теперь ваша очередь! Инструктор будет работать вместе с вами, шаг за шагом объяснять, как правильно выдавать заказы." TextWrapping="Wrap" FontSize="15"/>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">📝 Основные действия при выдаче:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <StackPanel>
+                            <TextBlock Text="1. Проверьте заказ по чеку (продукты, качество)"/>
+                            <TextBlock Text="2. Убедитесь, что положили все приборы и приправы"/>
+                            <TextBlock Text="3. Проверьте спецгриль"/>
+                            <TextBlock Text="4. Сбросьте заказ с презентер-монитора"/>
+                            <TextBlock Text="5. Сверьте номер заказа с гостем"/>
+                            <TextBlock Text="6. Улыбайтесь, скажите позитивное пожелание"/>
+                            <TextBlock Text="7. Сбросьте заказ с ORB после выдачи"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource PrimaryRed}" MouseLeftButtonDown="NextPage">
+                        <TextBlock Text="Далее →" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    </Border>
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource MediumGray}" MouseLeftButtonDown="PrevPage">
+                        <TextBlock Text="← Назад" FontSize="16" FontWeight="Bold" Foreground="{StaticResource TextDark}"/>
+                    </Border>
+                </StackPanel>
+
+                <!-- ================= СТРАНИЦА 12: Упражнение "Добрая и злая коробочка" ================= -->
+                <StackPanel x:Name="Page12" Visibility="Collapsed">
+                    <Border Background="{StaticResource PrimaryRed}" CornerRadius="10" Padding="20,15" Margin="0,0,0,20">
+                        <Grid>
+                            <TextBlock Text="Выдача заказа" FontSize="22" FontWeight="Bold" Foreground="White"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                <TextBlock Text="РАБОТНИКИ" FontSize="14" Foreground="#FFEBEE" Margin="0,0,15,0"/>
+                                <Border Background="#FFEBEE" CornerRadius="20" Padding="12,5">
+                                    <TextBlock Text="6 из 6" FontWeight="Bold" Foreground="{StaticResource PrimaryRed}"/>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <TextBlock Text="Упражнение «Добрая и злая коробочка»" Style="{StaticResource PageTitleStyle}"/>
+
+                    <Border Style="{StaticResource CardStyle}" Background="{StaticResource InfoBlue}">
+                        <StackPanel>
+                            <TextBlock FontWeight="Bold" Text="🎭 Выполните вместе с инструктором:"/>
+                            <TextBlock Text="1. Подайте коробочку со злыми словами и недружелюбной интонацией — отметьте реакцию"/>
+                            <TextBlock Text="2. Подайте с безразличием («Вот ваша еда») — отметьте реакцию"/>
+                            <TextBlock Text="3. Подайте с дружелюбием и позитивностью («Вот ваша еда, кушайте на здоровье!») — отметьте реакцию"/>
+                        </StackPanel>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">❓ Обсудите:</TextBlock>
+                    <Border Style="{StaticResource CardStyle}">
+                        <TextBlock Text="Как менялись ваши чувства и отношение к еде и человеку, который вручал вам заказ, когда он подавался с разным настроением, фразами и интонацией?" TextWrapping="Wrap"/>
+                    </Border>
+
+                    <TextBlock Style="{StaticResource SubTitleStyle}">💝 Добавьте «Позитивное пожелание»</TextBlock>
+                    <Border Style="{StaticResource CardStyle}" Background="{StaticResource SuccessGreen}">
+                        <StackPanel>
+                            <TextBlock Text="• «Я желаю вам чудесного дня!»"/>
+                            <TextBlock Text="• Если трудный день — «Желаю вам вкусно поесть и позитивного дня!»"/>
+                            <TextBlock Text="• Если день отличный — «Желаю вам отличного дня!»"/>
+                            <TextBlock Text="• Если ответ недружелюбный — «Желаю вам хорошего дня!»"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource PrimaryRed}" MouseLeftButtonDown="NextPage">
+                        <TextBlock Text="Завершить обучение" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    </Border>
+                    <Border Style="{StaticResource NavButtonStyle}" Background="{StaticResource MediumGray}" MouseLeftButtonDown="PrevPage">
+                        <TextBlock Text="← Назад" FontSize="16" FontWeight="Bold" Foreground="{StaticResource TextDark}"/>
+                    </Border>
+                </StackPanel>
+
+                <!-- ================= ФИНАЛЬНАЯ СТРАНИЦА ================= -->
+                <StackPanel x:Name="PageEnd" Visibility="Collapsed">
+                    <Border Background="{StaticResource PrimaryRed}" CornerRadius="10" Padding="40,30" Margin="0,50,0,0">
+                        <StackPanel HorizontalAlignment="Center">
+                            <TextBlock Text="🎉 Поздравляем!" FontSize="32" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Вы успешно прошли обучение по сбору и выдаче заказов" FontSize="20" Foreground="#FFEBEE" HorizontalAlignment="Center" Margin="0,15,0,0" TextWrapping="Wrap" TextAlignment="Center"/>
+                            <TextBlock Text="Спасибо за внимание!" FontSize="18" Foreground="#FFEBEE" HorizontalAlignment="Center" Margin="0,10,0,20"/>
+                            <Border Background="White" CornerRadius="30" Padding="20,10" Cursor="Hand" HorizontalAlignment="Center" MouseLeftButtonDown="RestartTraining">
+                                <TextBlock Text="🔄 Пройти заново" FontSize="16" FontWeight="Bold" Foreground="{StaticResource PrimaryRed}"/>
+                            </Border>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

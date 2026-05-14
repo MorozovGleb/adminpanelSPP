@@ -33,13 +33,13 @@ namespace SPP.Client.Views
         private void VerificationButton_Click(object sender, RoutedEventArgs e)
         {
             var window = new SPP.Client.Views.Instructor.VerificationWindow();
-            window.Show();
+            window.ShowDialog();
         }
 
         private void ScheduleButton_Click(object sender, RoutedEventArgs e)
         {
             var myScheduleWindow = new Schedule(_user);
-            myScheduleWindow.Show();
+            myScheduleWindow.ShowDialog();
         }
 
         private void HoursButton_Click(object sender, RoutedEventArgs e)
@@ -50,19 +50,39 @@ namespace SPP.Client.Views
         private void CreateScheduleButton_Click(object sender, RoutedEventArgs e)
         {
             var window = new SPP.Client.Views.Manager.CreateSchedule();
-            window.Show();
+            window.ShowDialog();
         }
 
         private void CreateUserButton_Click(object sender, RoutedEventArgs e)
         {
             var window = new SPP.Client.Views.Manager.AddUserWindow();
-            window.Show();
+            window.ShowDialog();
         }
 
         private void ShowUserButton_Click(object sender, RoutedEventArgs e)
         {
             var window = new SPP.Client.Views.Manager.AllWorkersWindow();
-            window.Show();
+            window.ShowDialog();
+        }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+
+            MessageBoxResult result = MessageBox.Show(
+    "Вы уверены, что хотите выйти из аккаунта?",
+    "Подтверждение выхода",
+    MessageBoxButton.YesNo,
+    MessageBoxImage.Question);
+
+            if (result == MessageBoxResult.Yes)
+            {
+                // Закрываем текущее окно
+                var authWindow = new LoginWindow(); // Замените на имя вашего окна авторизации
+                authWindow.Show();
+                this.Close();
+
+                // Показываем окно авторизации
+            }
         }
     }
 }

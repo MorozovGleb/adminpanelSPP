@@ -35,7 +35,7 @@ namespace SPP.Client.Views
         private void ScheduleButton_Click(object sender, RoutedEventArgs e)
         {
             var myScheduleWindow = new Schedule(_user);
-            myScheduleWindow.Show();
+            myScheduleWindow.ShowDialog();
         }
 
         private void HoursButton_Click(object sender, RoutedEventArgs e)
@@ -46,7 +46,26 @@ namespace SPP.Client.Views
         private void LearnButton_Click(object sender, RoutedEventArgs e)
         {
             var window = new MyLearn(_user);
-            window.Show();
+            window.ShowDialog();
+        }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show(
+    "Вы уверены, что хотите выйти из аккаунта?",
+    "Подтверждение выхода",
+    MessageBoxButton.YesNo,
+    MessageBoxImage.Question);
+
+            if (result == MessageBoxResult.Yes)
+            {
+                // Закрываем текущее окно
+                var authWindow = new LoginWindow(); // Замените на имя вашего окна авторизации
+                authWindow.Show();
+                this.Close();
+
+                // Показываем окно авторизации
+            }
         }
     }
 }

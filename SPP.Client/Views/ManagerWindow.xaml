@@ -7,8 +7,9 @@
         Title="Менеджер — Вкусно и точка"
         Height="600"
         Width="950"
-        Background="#F7F9F8"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+ Background="#F7F9F8"
+ ResizeMode="NoResize">
 
     <Window.Resources>
 
@@ -85,9 +86,7 @@
                         Style="{StaticResource ActionButtonStyle}"
                         Click="ScheduleButton_Click"/>
 
-                <Button Content="Просмотр отработанных часов"
-                        Style="{StaticResource ActionButtonStyle}"
-                        Click="HoursButton_Click"/>
+                
 
                 <Button Content="Составить расписание"
                         Style="{StaticResource ActionButtonStyle}"

@@ -8,8 +8,9 @@
         Title="Добавление пользователя — Вкусно и точка"
         Height="650"
         Width="850"
-        Background="#F7F9F8"
-        WindowStartupLocation="CenterScreen">
+         WindowStartupLocation="CenterScreen"
+ Background="#F7F9F8"
+ ResizeMode="NoResize">
 
     <Window.Resources>
 

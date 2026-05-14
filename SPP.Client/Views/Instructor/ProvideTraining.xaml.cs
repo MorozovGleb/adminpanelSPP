@@ -107,5 +107,29 @@ namespace SPP.Client.Views.Instructor
             var window = new SPP.Client.Views.Instructor.Moduls.CafeBaking();
             window.ShowDialog();
         }
+
+        private void CreateBreakfast_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new SPP.Client.Views.Instructor.Moduls.CreateBreakfast();
+            window.ShowDialog();
+        }
+
+        private void AssemblyBreakfast_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new SPP.Client.Views.Instructor.Moduls.AssemblyBreakfast();
+            window.ShowDialog();
+        }
+
+        private void DLK_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new SPP.Client.Views.Instructor.Moduls.DLK();
+            window.ShowDialog();
+        }
+
+        private void LeaderofHospitality_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new SPP.Client.Views.Instructor.Moduls.LeaderofHospitality();
+            window.ShowDialog();
+        }
     }
 }

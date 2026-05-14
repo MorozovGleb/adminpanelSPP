@@ -1,130 +1,252 @@
 ﻿<Window x:Class="SPP.Client.Views.Instructor.ProvideTraining"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SPP.Client.Views.Instructor"
-        mc:Ignorable="d"
-        Title="ProvideTraining" Height="1200" Width="800">
-    <Window.Resources>
+                         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="Модули для обучения Работников"
+ WindowStartupLocation="CenterScreen"
+ Background="#F7F9F8"
+ ResizeMode="NoResize">
 
-        <!-- Фирменная кнопка -->
-        <Style x:Key="ActionButtonStyle" TargetType="Button">
+    <Window.Resources>
+        <!-- Стиль для заголовка категории -->
+        <Style x:Key="CategoryHeaderStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="#333333"/>
+            <Setter Property="Margin" Value="0,25,0,8"/>
+        </Style>
+
+        <!-- Стиль для кнопки -->
+        <Style x:Key="CategoryButtonStyle" TargetType="Button">
             <Setter Property="Height" Value="50"/>
             <Setter Property="FontSize" Value="15"/>
             <Setter Property="FontWeight" Value="SemiBold"/>
             <Setter Property="Foreground" Value="White"/>
-            <Setter Property="Background" Value="#FF7A00"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="Cursor" Value="Hand"/>
-            <Setter Property="Margin" Value="0,10,0,0"/>
-
+            <Setter Property="Margin" Value="0,5,0,0"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}"
-                                CornerRadius="10">
+                                CornerRadius="10"
+                                Padding="20,0">
                             <ContentPresenter HorizontalAlignment="Center"
                                               VerticalAlignment="Center"/>
                         </Border>
-
                         <ControlTemplate.Triggers>
-
-                            <!-- Hover -->
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#E66F00"/>
+                                <Setter Property="Opacity" Value="0.85"/>
                             </Trigger>
-
-                            <!-- Press -->
                             <Trigger Property="IsPressed" Value="True">
-                                <Setter Property="Background" Value="#CC6200"/>
+                                <Setter Property="Opacity" Value="0.7"/>
                             </Trigger>
-
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
         </Style>
 
+        <!-- Разделитель -->
+        <Style x:Key="CategorySeparatorStyle" TargetType="Rectangle">
+            <Setter Property="Height" Value="3"/>
+            <Setter Property="Margin" Value="0,2,0,12"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        </Style>
     </Window.Resources>
 
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="27*"/>
-            <ColumnDefinition Width="133*"/>
-        </Grid.ColumnDefinitions>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" 
+                      HorizontalScrollBarVisibility="Disabled">
+            <Border Background="White"
+                    CornerRadius="20"
+                    Padding="50,40"
+                    Width="650"
+                    Margin="0,30,0,30"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top">
 
-        <Border Background="White"
-                CornerRadius="15"
-                Padding="40"
-                Width="602"
-                HorizontalAlignment="Left"
-                VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="99,0,0,0">
+                <StackPanel>
+                    <!-- Заголовок -->
+                    <TextBlock x:Name="HeaderText"
+                               Text="Модули для обучения Работников"
+                               FontSize="26"
+                               FontWeight="Bold"
+                               Foreground="#111111"
+                               HorizontalAlignment="Center"
+                               TextWrapping="Wrap"
+                               TextAlignment="Center"/>
 
-            <StackPanel>
+                    <Rectangle Height="4"
+                               Width="90"
+                               Fill="#00A651"
+                               Margin="0,12,0,25"
+                               HorizontalAlignment="Center"/>
 
-                <!-- Заголовок -->
-                <TextBlock x:Name="HeaderText"
-                           Text="Модули для обучения Работников"
-                           FontSize="26"
-                           FontWeight="Bold"
-                           Foreground="#111111"
-                           HorizontalAlignment="Center"/>
+                    <!-- ========================================== -->
+                    <!-- ВВОДНОЕ ОЗНАКОМЛЕНИЕ С ИНСТРУКТОРОМ -->
+                    <!-- ========================================== -->
+                    <StackPanel>
+                        <TextBlock Text=" ВВОДНОЕ ОЗНАКОМЛЕНИЕ С ИНСТРУКТОРОМ"
+                                   Style="{StaticResource CategoryHeaderStyle}"/>
+                        <Rectangle Fill="#607D8B" Style="{StaticResource CategorySeparatorStyle}"/>
 
-                <!-- Зеленый акцент -->
-                <Rectangle Height="4"
-                           Width="90"
-                           Fill="#00A651"
-                           Margin="0,10,0,30"
-                           HorizontalAlignment="Center"/>
-                <Button Content="Вводное ознакомление с инструктором"
-                        Style="{StaticResource ActionButtonStyle}"
-                        Click="VvodnoeOznakimlenie_Click"/>
-                <Button Content="Приготовление картофеля"
-        Style="{StaticResource ActionButtonStyle}"
-        Click="Potatoes_Click"/>
-                <Button Content="Напитки и десерты"
-Style="{StaticResource ActionButtonStyle}"
-Click="DrinksAndDesserts_Click"/>
-                <Button Content="Прием и оплата заказов на прилавке"
-Style="{StaticResource ActionButtonStyle}"
-Click="Mayachok_Click"/>
-                <Button Content="Сбор и выдача заказов на прилавке"
-Style="{StaticResource ActionButtonStyle}"
-Click="Prilavok_Click"/>
-                <Button Content="Сервис Доставка"
-Style="{StaticResource ActionButtonStyle}"
-Click="Delivery_Click"/>
-                <Button Content="Зал и киоски самообслуживания"
-Style="{StaticResource ActionButtonStyle}"
-Click="HallAndKiosks_Click"/>
-                <Button Content="Прием и оплата на автораздаче"
-Style="{StaticResource ActionButtonStyle}"
-Click="Oplata_Click"/>
-                <Button Content="Сбор и выдача заказов на автораздаче"
-Style="{StaticResource ActionButtonStyle}"
-Click="SborAvto_Click"/>
-                <Button Content="Приготовление на гриле"
-Style="{StaticResource ActionButtonStyle}"
-Click="Grill_Click"/>
-                <Button Content="Приготовление во фитюре"
-Style="{StaticResource ActionButtonStyle}"
-Click="Frying_Click"/>
-                <Button Content="Приготовление основого меню"
-Style="{StaticResource ActionButtonStyle}"
-Click="Osnovnoemenu_Click"/>
-                <Button Content="Выдержка и подготовка продуктов"
-Style="{StaticResource ActionButtonStyle}"
-Click="Popolnenie_Click"/>
-                <Button Content="Кафе.Выпекание"
-Style="{StaticResource ActionButtonStyle}"
-Click="Cafe_Click"/>
-                <!-- Кнопки -->
+                        <Button Content="Вводное ознакомление с инструктором"
+                                Background="#455A64"
+                                Style="{StaticResource CategoryButtonStyle}"
+                                Click="VvodnoeOznakimlenie_Click"/>
+                    </StackPanel>
 
+                    <!-- ========================================== -->
+                    <!-- ОБСЛУЖИВАНИЕ. ПРИЛАВОК -->
+                    <!-- ========================================== -->
+                    <StackPanel>
+                        <TextBlock Text=" ОБСЛУЖИВАНИЕ. ПРИЛАВОК"
+                                   Style="{StaticResource CategoryHeaderStyle}"/>
+                        <Rectangle Fill="#2196F3" Style="{StaticResource CategorySeparatorStyle}"/>
 
-            </StackPanel>
+                        <Button Content="Приготовление картофеля"
+                                Background="#1976D2"
+                                Style="{StaticResource CategoryButtonStyle}"
+                                Click="Potatoes_Click"/>
 
-        </Border>
+                        <Button Content="Напитки и десерты"
+                                Background="#1976D2"
+                                Style="{StaticResource CategoryButtonStyle}"
+                                Click="DrinksAndDesserts_Click"/>
 
+                        <Button Content="Прием и оплата заказов на прилавке"
+                                Background="#1976D2"
+                                Style="{StaticResource CategoryButtonStyle}"
+                                Click="Mayachok_Click"/>
+
+                        <Button Content="Сбор и выдача заказов на прилавке"
+                                Background="#1976D2"
+                                Style="{StaticResource CategoryButtonStyle}"
+                                Click="Prilavok_Click"/>
+
+                        <Button Content="Сервис Доставка"
+                                Background="#1976D2"
+                                Style="{StaticResource CategoryButtonStyle}"
+                                Click="Delivery_Click"/>
+
+                        <Button Content="Зал и киоски самообслуживания"
+                                Background="#1976D2"
+                                Style="{StaticResource CategoryButtonStyle}"
+                                Click="HallAndKiosks_Click"/>
+                    </StackPanel>
+
+                    <!-- ========================================== -->
+                    <!-- ОБСЛУЖИВАНИЕ. АВТОРАЗДАЧА -->
+                    <!-- ========================================== -->
+                    <StackPanel>
+                        <TextBlock Text=" ОБСЛУЖИВАНИЕ. АВТОРАЗДАЧА"
+                                   Style="{StaticResource CategoryHeaderStyle}"/>
+                        <Rectangle Fill="#03A9F4" Style="{StaticResource CategorySeparatorStyle}"/>
+
+                        <Button Content="Прием и оплата заказов на автораздаче"
+                                Background="#0288D1"
+                                Style="{StaticResource CategoryButtonStyle}"
+                                Click="Oplata_Click"/>
+
+                        <Button Content="Сбор и выдача заказов на автораздаче"
+                                Background="#0288D1"
+                                Style="{StaticResource CategoryButtonStyle}"
+                                Click="SborAvto_Click"/>
+                    </StackPanel>
+
+                    <!-- ========================================== -->
+                    <!-- ПРОИЗВОДСТВО. ОСНОВНОЕ МЕНЮ -->
+                    <!-- ========================================== -->
+                    <StackPanel>
+                        <TextBlock Text=" ПРОИЗВОДСТВО. ОСНОВНОЕ МЕНЮ"
+                                   Style="{StaticResource CategoryHeaderStyle}"/>
+                        <Rectangle Fill="#FF9800" Style="{StaticResource CategorySeparatorStyle}"/>
+
+                        <Button Content="Приготовление на гриле"
+                                Background="#E65100"
+                                Style="{StaticResource CategoryButtonStyle}"
+                                Click="Grill_Click"/>
+
+                        <Button Content="Приготовление во фритюре"
+                                Background="#E65100"
+                                Style="{StaticResource CategoryButtonStyle}"
+                                Click="Frying_Click"/>
+
+                        <Button Content="Приготовление основного меню"
+                                Background="#E65100"
+                                Style="{StaticResource CategoryButtonStyle}"
+                                Click="Osnovnoemenu_Click"/>
+
+                        <Button Content="Выдержка и подготовка продуктов"
+                                Background="#E65100"
+                                Style="{StaticResource CategoryButtonStyle}"
+                                Click="Popolnenie_Click"/>
+                    </StackPanel>
+
+                    <!-- ========================================== -->
+                    <!-- ИНТЕГРИРОВАННОЕ КАФЕ -->
+                    <!-- ========================================== -->
+                    <StackPanel>
+                        <TextBlock Text=" ИНТЕГРИРОВАННОЕ КАФЕ"
+                                   Style="{StaticResource CategoryHeaderStyle}"/>
+                        <Rectangle Fill="#795548" Style="{StaticResource CategorySeparatorStyle}"/>
+
+                        <Button Content="Выпекание"
+                                Background="#5D4037"
+                                Style="{StaticResource CategoryButtonStyle}"
+                                Click="Cafe_Click"/>
+                    </StackPanel>
+
+                    <!-- ========================================== -->
+                    <!-- ПРОИЗВОДСТВО. ЗАВТРАКИ -->
+                    <!-- ========================================== -->
+                    <StackPanel>
+                        <TextBlock Text=" ПРОИЗВОДСТВО. ЗАВТРАКИ"
+                                   Style="{StaticResource CategoryHeaderStyle}"/>
+                        <Rectangle Fill="#FF5722" Style="{StaticResource CategorySeparatorStyle}"/>
+
+                        <Button Content="Приготовление завтрака"
+                                Background="#D84315"
+                                Style="{StaticResource CategoryButtonStyle}"
+                                Click="CreateBreakfast_Click"/>
+
+                        <Button Content="Сборка завтрака"
+                                Background="#D84315"
+                                Style="{StaticResource CategoryButtonStyle}"
+                                Click="AssemblyBreakfast_Click"/>
+                    </StackPanel>
+
+                    <!-- ========================================== -->
+                    <!-- ДОСТАВКА DELK -->
+                    <!-- ========================================== -->
+                    <StackPanel>
+                        <TextBlock Text=" ДОСТАВКА DELK"
+                                   Style="{StaticResource CategoryHeaderStyle}"/>
+                        <Rectangle Fill="#E91E63" Style="{StaticResource CategorySeparatorStyle}"/>
+
+                        <Button Content="Работа в доставке DELK"
+                                Background="#C2185B"
+                                Style="{StaticResource CategoryButtonStyle}"
+                                Click="DLK_Click"/>
+                    </StackPanel>
+
+                    <!-- ========================================== -->
+                    <!-- ЛИДЕР ГОСТЕПРИИМСТВА -->
+                    <!-- ========================================== -->
+                    <StackPanel>
+                        <TextBlock Text=" ЛИДЕР ГОСТЕПРИИМСТВА"
+                                   Style="{StaticResource CategoryHeaderStyle}"/>
+                        <Rectangle Fill="#4CAF50" Style="{StaticResource CategorySeparatorStyle}"/>
+
+                        <Button Content="Лидер гостеприимства"
+                                Background="#388E3C"
+                                Style="{StaticResource CategoryButtonStyle}"
+                                Click="LeaderofHospitality_Click"/>
+                    </StackPanel>
+
+                </StackPanel>
+            </Border>
+        </ScrollViewer>
     </Grid>
 </Window>

@@ -4,8 +4,9 @@
         Title="Инструктор — Вкусно и точка"
         Height="550"
         Width="950"
-        WindowStartupLocation="CenterScreen"
-        Background="#F7F9F8">
+         WindowStartupLocation="CenterScreen"
+ Background="#F7F9F8"
+ ResizeMode="NoResize">
 
     <Window.Resources>
 
@@ -84,9 +85,7 @@
                         Style="{StaticResource ActionButtonStyle}"
                         Click="ScheduleButton_Click"/>
 
-                <Button Content="Просмотр отработанных часов"
-                        Style="{StaticResource ActionButtonStyle}"
-                        Click="HoursButton_Click"/>
+                
 
                 <Button Content="Провести обучение"
                         Style="{StaticResource ActionButtonStyle}"

@@ -2,6 +2,7 @@
 using SPP.Client.Models;
 using System.Net.Http;
 using System.Net.Http.Json;
+using System.Text.Json;
 using System.Windows;
 
 
@@ -98,5 +99,27 @@ public class ApiService
             dto);
 
         response.EnsureSuccessStatusCode();
+    }
+    // Метод для получения расписания текущего пользователя
+    public async Task<MyScheduleResponseDto> GetMySchedule(int userId)
+    {
+        try
+        {
+            var response = await _httpClient.GetAsync($"api/Schedule/user/{userId}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return JsonSerializer.Deserialize<MyScheduleResponseDto>(content,
+                    new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+            }
+
+            return null;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Ошибка получения расписания: {ex.Message}");
+            return null;
+        }
     }
 }

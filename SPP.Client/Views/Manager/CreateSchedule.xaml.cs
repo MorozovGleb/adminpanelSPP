@@ -138,51 +138,51 @@ namespace SPP.Client.Views.Manager
             {
                 ViewExistingButton.IsEnabled = false;
                 ClearOutput();
-                AppendColoredText("Загрузка существующего расписания...", "#FFD700");
+                AppendText("Загрузка существующего расписания...");
 
                 var fromDate = DateTime.Today;
                 var toDate = DateTime.Today.AddDays(7);
 
                 var response = await _http.GetAsync(
-                    $"{BaseUrl}/api/schedule/existing?fromDate={fromDate:yyyy-MM-dd}&toDate={toDate:yyyy-MM-dd}");
+                    $"{BaseUrl}/api/Schedule/existing?fromDate={fromDate:yyyy-MM-dd}&toDate={toDate:yyyy-MM-dd}");
 
                 if (response.IsSuccessStatusCode)
                 {
                     var content = await response.Content.ReadAsStringAsync();
-                    var schedules = JsonSerializer.Deserialize<List<ScheduleDto>>(content,
+                    var scheduleData = JsonSerializer.Deserialize<ScheduleResponse>(content,
                         new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
-                    if (schedules != null && schedules.Any())
+                    if (scheduleData != null && scheduleData.Users.Any())
                     {
-                        AppendColoredText($"📋 Найдено {schedules.Count} смен:", "#4CAF50");
+                        AppendText($"✅ Найдено {scheduleData.TotalUsers} пользователей, {scheduleData.TotalShifts} смен");
                         AppendText("");
 
-                        var groupedByDate = schedules.GroupBy(s => s._Date.Date);
-                        foreach (var group in groupedByDate.OrderBy(g => g.Key))
+                        foreach (var user in scheduleData.Users)
                         {
-                            AppendColoredText($"📅 {group.Key:dd.MM.yyyy}:", "#2196F3");
-                            foreach (var schedule in group.OrderBy(s => s._Start))
+                            AppendText($"👤 {user.UserName} (ID: {user.UserId}) - {user.TotalShifts} смен:");
+
+                            foreach (var shift in user.Shifts)
                             {
-                                AppendText($"  • Сотрудник {schedule.ID_User}, " +
-                                    $"Верификация {schedule.ID_Verification}, " +
-                                    $"{schedule._Start:hh\\:mm} - {schedule._End:hh\\:mm}");
+                                AppendText($"  📅 {shift.Date} ({shift.DayOfWeek}): {shift.Start} - {shift.End}");
                             }
-                            AppendText("");
+
+                            AppendText(""); // Пустая строка между пользователями
                         }
                     }
                     else
                     {
-                        AppendColoredText("📋 Нет смен в выбранном диапазоне дат", "#FF9800");
+                        AppendText("📋 Нет смен в выбранном периоде");
                     }
                 }
                 else
                 {
-                    AppendColoredText($"❌ Ошибка при загрузке: {response.StatusCode}", "#f44336");
+                    var error = await response.Content.ReadAsStringAsync();
+                    AppendText($"❌ Ошибка сервера: {error}");
                 }
             }
             catch (Exception ex)
             {
-                AppendColoredText($"❌ Ошибка: {ex.Message}", "#f44336");
+                AppendText($"❌ Ошибка: {ex.Message}");
             }
             finally
             {
@@ -190,46 +190,7 @@ namespace SPP.Client.Views.Manager
             }
         }
 
-        private async void CheckStatus_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                CheckStatusButton.IsEnabled = false;
-                ClearOutput();
-                AppendColoredText("Проверка статуса сервера...", "#FFD700");
-
-                var response = await _http.GetAsync($"{BaseUrl}/api/schedule/status");
-
-                if (response.IsSuccessStatusCode)
-                {
-                    var content = await response.Content.ReadAsStringAsync();
-                    var status = JsonSerializer.Deserialize<StatusResponse>(content,
-                        new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
-
-                    AppendColoredText("✅ Сервер работает", "#4CAF50");
-                    AppendColoredText("📊 Статистика:", "#FFD700");
-                    AppendText($"  • Пользователей: {status.Counts.Users}");
-                    AppendText($"  • Верификаций: {status.Counts.Verifications}");
-                    AppendText($"  • Смен в расписании: {status.Counts.Schedules}");
-                    AppendText($"  • Подтверждений навыков: {status.Counts.Confirmations}");
-                    AppendText("");
-                    AppendText($"🕐 Время сервера: {status.Timestamp:dd.MM.yyyy HH:mm:ss}");
-                }
-                else
-                {
-                    AppendColoredText($"❌ Сервер недоступен: {response.StatusCode}", "#f44336");
-                }
-            }
-            catch (Exception ex)
-            {
-                AppendColoredText($"❌ Ошибка соединения: {ex.Message}", "#f44336");
-                AppendText($"Проверьте, что сервер запущен на {BaseUrl}");
-            }
-            finally
-            {
-                CheckStatusButton.IsEnabled = true;
-            }
-        }
+        
 
         private async void ClearSchedule_Click(object sender, RoutedEventArgs e)
         {
@@ -309,5 +270,28 @@ namespace SPP.Client.Views.Manager
         public int Verifications { get; set; }
         public int Schedules { get; set; }
         public int Confirmations { get; set; }
+    }
+    public class ScheduleResponse
+    {
+        public int TotalUsers { get; set; }
+        public int TotalShifts { get; set; }
+        public List<UserSchedule> Users { get; set; }
+    }
+
+    public class UserSchedule
+    {
+        public int UserId { get; set; }
+        public string UserName { get; set; }
+        public int TotalShifts { get; set; }
+        public List<ShiftDto> Shifts { get; set; }
+    }
+
+    public class ShiftDto
+    {
+        public int Id { get; set; }
+        public string Date { get; set; }
+        public string DayOfWeek { get; set; }
+        public string Start { get; set; }
+        public string End { get; set; }
     }
 }

@@ -41,7 +41,8 @@ namespace SPP.Client.Views
 
         private void ScheduleButton_Click(object sender, RoutedEventArgs e)
         {
-
+            var myScheduleWindow = new Schedule(_user);
+            myScheduleWindow.Show();
         }
 
         private void HoursButton_Click(object sender, RoutedEventArgs e)
